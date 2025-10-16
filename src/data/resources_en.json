@@ -2,21 +2,59 @@
   {
     "id": "rights",
     "title": "Rights and Obligations",
-    "text": "Article 41. Rights and obligations of the person held liable\n\n(1) The person held liable has the following rights:\n\n1) to become acquainted with the materials of the administrative violation case;\n2) to participate in the examination of the administrative violation case;\n3) to provide explanations;\n4) to use a language in which they can communicate and request interpreter assistance;\n5) to know what violation they are being held liable for;\n6) to submit evidence;\n7) to appeal the adopted decision;\n8) to exercise defence with the assistance of a defender;\n9) to withdraw a complaint or request submitted by a defender.\n\n(2) The person held liable has the following obligations:\n\n1) to appear at the specified time;\n2) not to obstruct or interfere with the proceedings;\n3) to notify of a change of address;\n4) to cease the violation;\n5) to comply with the imposed procedural coercive measure."
+    "section": "Administrative Law",
+    "items": [
+      {
+        "id": "rights_and_obligations",
+        "title": "Rights and Obligations of the Person Held Liable",
+        "text": "Section 41. Rights and Obligations of the Person Held Liable\n\n(1) The person held liable has the following rights:\n\n1) to acquaint himself or herself with the materials of the administrative offence case;\n2) to participate in the examination of the administrative offence case;\n3) to provide explanations;\n4) to use a language he or she understands and to use the assistance of an interpreter;\n5) to know for what offence he or she is held liable;\n6) to submit evidence;\n7) to appeal the adopted decision;\n8) to exercise defence with the assistance of a chosen defender;\n9) to withdraw a complaint or request submitted by a defender.\n\n(2) The person held liable has the following obligations:\n\n1) to appear at the specified time and place;\n2) not to obstruct the administrative process;\n3) to notify about any change of address;\n4) to cease the unlawful conduct;\n5) to comply with any procedural coercive measures applied."
+      },
+      {
+        "id": "detention_rights",
+        "title": "Rights of the Detained Person and Procedure for Detention",
+        "text": "(4) A detained person has the right:\n\n1) to invite a defender;\n2) to request that his or her relatives, educational institution or employer be informed of the detention. In the case of a minor, the representative must be informed;\n3) to become acquainted with the detention protocol and to receive information on his or her rights and obligations;\n4) to express his or her opinion on the justification for the detention.\n\n(5) A person may be detained for no longer than four hours. The period of detention shall be counted from the moment of actual detention. If the person is under the influence of alcohol or other intoxicating substances, the period shall be counted from the time when the person is able to adequately perceive what is happening.\n\n(6) The detention protocol shall be notified to the person concerned."
+      }
+    ]
   },
   {
     "id": "mitigating",
     "title": "Mitigating Circumstances",
-    "text": "Article 20. Mitigating circumstances\n\n(1) The following circumstances mitigate liability for an administrative violation:\n\n1) the person held liable has admitted and regretted the committed act;\n2) the person held liable has voluntarily compensated for the damage or eliminated the caused harm;\n3) the violation was committed under strong emotional agitation or due to serious personal or family circumstances;\n4) the person held liable has voluntarily come forward before the discovery of the violation;\n5) the violation was committed under the influence of the victim’s unlawful or immoral behaviour;\n6) the violation was committed by a pregnant woman or a woman caring for a child under one year of age.\n\n(2) Other circumstances may also be considered mitigating."
+    "section": "Administrative Law",
+    "items": [
+      {
+        "id": "mitigating_factors",
+        "title": "Section 20. Mitigating Circumstances",
+        "text": "(1) The following circumstances mitigate administrative liability:\n\n1) the person held liable has admitted and regretted the offence;\n2) the person has voluntarily compensated the loss or eliminated the damage caused;\n3) the offence was committed under strong emotional distress or due to serious personal or family circumstances;\n4) the person voluntarily reported the offence before it was discovered;\n5) the offence was committed under provocation by the victim’s unlawful or immoral conduct;\n6) the offence was committed by a pregnant woman or a woman caring for a child under one year of age.\n\n(2) Other circumstances may also be recognised as mitigating."
+      }
+    ]
   },
   {
     "id": "aggravating",
     "title": "Aggravating Circumstances",
-    "text": "Article 21. Aggravating circumstances\n\nLiability for an administrative violation may be aggravated by the following circumstances:\n\n1) unlawful conduct continued despite an authorised official’s request to stop;\n2) an adult involved a minor in the violation;\n3) the violation was committed during a natural disaster or other extraordinary circumstances;\n4) the violation was committed under the influence of alcohol, narcotic or other intoxicating substances;\n5) the motive for the violation was hatred towards a person’s race, religion, nationality or other identifiable personal characteristics;\n6) the violation was committed by a group of persons."
+    "section": "Administrative Law",
+    "items": [
+      {
+        "id": "aggravating_factors",
+        "title": "Section 21. Aggravating Circumstances",
+        "text": "The following circumstances aggravate administrative liability:\n\n1) the unlawful act was continued despite an authorised official’s request to cease it;\n2) the offence involved a minor engaged by an adult;\n3) the offence was committed during a natural disaster or other extraordinary circumstances;\n4) the offence was committed under the influence of alcohol, narcotic or other intoxicating substances;\n5) the motive of the offence was hatred towards a person’s race, religion, nationality or other clearly identifiable features;\n6) the offence was committed by a group of persons."
+      }
+    ]
   },
   {
-    "id": "detention_rights",
-    "title": "Rights of Detained Persons and Detention Procedure",
-    "text": "(4) A detained person has the right to:\n\n1) invite a defender;\n2) request that the fact of detention be communicated to their relative, educational institution or employer. In the case of a minor, notification must be given to their representative;\n3) become acquainted with the detention report and receive information on their rights and obligations;\n4) express their opinion on the justification of the detention.\n\n(5) A person may be detained for no longer than four hours. The detention time shall be counted from the actual moment of detention. For a person under the influence of alcohol, narcotic or other intoxicating substances, the detention time shall be counted from the moment the person is able to adequately perceive what is happening.\n\n(6) The detention report shall be communicated to the person concerned."
+    "id": "monument",
+    "title": "Freedom Monument and Riga Brethren Cemetery Law",
+    "section": "Public Order",
+    "items": [
+      {
+        "id": "section9",
+        "title": "Section 9. Showing Disrespect Towards the Freedom Monument or Riga Brethren Cemetery",
+        "text": "For showing blatant disrespect towards the Freedom Monument or Riga Brethren Cemetery, a fine shall be imposed on a natural person from 1000 to 2000 units of fine (from 1000 to 2000 euros)."
+      },
+      {
+        "id": "section11",
+        "title": "Section 11. Administrative Procedure",
+        "text": "Administrative offence proceedings for offences referred to in Sections 9 and 10 of this Law shall be conducted by the State Police and municipal police."
+      }
+    ]
   }
 ]

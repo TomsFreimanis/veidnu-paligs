@@ -2,21 +2,59 @@
   {
     "id": "rights",
     "title": "Tiesības un pienākumi",
-    "text": "41. pants. Pie atbildības saucamās personas tiesības un pienākumi\n\n(1) Pie atbildības saucamajai personai ir šādas tiesības:\n\n1) iepazīties ar administratīvā pārkāpuma lietas materiāliem;\n2) piedalīties administratīvā pārkāpuma lietas izskatīšanā;\n3) sniegt paskaidrojumus;\n4) lietot valodu, kurā tā spēj sazināties, un izmantot tulka palīdzību;\n5) zināt, par kāda pārkāpuma izdarīšanu tā tiek saukta pie atbildības;\n6) iesniegt pierādījumus;\n7) pārsūdzēt pieņemto lēmumu;\n8) īstenot aizstāvību ar aizstāvja palīdzību;\n9) atsaukt aizstāvja iesniegtu sūdzību vai lūgumu.\n\n(2) Pie atbildības saucamajai personai ir šādi pienākumi:\n\n1) ierasties noteiktajā laikā;\n2) netraucēt procesa norisi;\n3) paziņot par adreses maiņu;\n4) pārtraukt pārkāpumu;\n5) ievērot piemēroto procesuālo piespiedu līdzekli."
+    "section": "Administratīvās tiesības",
+    "items": [
+      {
+        "id": "rights_and_obligations",
+        "title": "Pie atbildības saucamās personas tiesības un pienākumi",
+        "text": "41. pants. Pie atbildības saucamās personas tiesības un pienākumi\n\n(1) Pie atbildības saucamajai personai ir šādas tiesības:\n\n1) iepazīties ar administratīvā pārkāpuma lietas materiāliem;\n2) piedalīties administratīvā pārkāpuma lietas izskatīšanā;\n3) sniegt paskaidrojumus;\n4) lietot valodu, kurā tā spēj sazināties, un izmantot tulka palīdzību;\n5) zināt, par kāda pārkāpuma izdarīšanu tā tiek saukta pie atbildības;\n6) iesniegt pierādījumus;\n7) pārsūdzēt pieņemto lēmumu;\n8) īstenot aizstāvību ar aizstāvja palīdzību;\n9) atsaukt aizstāvja iesniegtu sūdzību vai lūgumu.\n\n(2) Pie atbildības saucamajai personai ir šādi pienākumi:\n\n1) ierasties noteiktajā laikā;\n2) netraucēt procesa norisi;\n3) paziņot par adreses maiņu;\n4) pārtraukt pārkāpumu;\n5) ievērot piemēroto procesuālo piespiedu līdzekli."
+      },
+      {
+        "id": "detention_rights",
+        "title": "Aizturētās personas tiesības un aizturēšanas kārtība",
+        "text": "(4) Aizturētajai personai ir tiesības:\n\n1) uzaicināt aizstāvi;\n2) pieprasīt, lai par aizturēšanu paziņo tās tuviniekam, mācību iestādei vai darba devējam. Par nepilngadīgas personas aizturēšanu obligāti paziņo tās pārstāvim;\n3) iepazīties ar aizturēšanas protokolu un saņemt informāciju par aizturētā tiesībām un pienākumiem;\n4) izteikt savu viedokli par aizturēšanas pamatotību.\n\n(5) Aizturēto personu drīkst aizturēt ne ilgāk kā uz četrām stundām. Personas aizturēšanas laiku skaita no faktiskās aizturēšanas brīža. Personai, kas atradusies alkoholisko dzērienu vai citu apreibinošu vielu ietekmē, administratīvās aizturēšanas laiku skaita no brīža, kad persona spēj adekvāti uztvert notiekošo.\n\n(6) Aizturēšanas protokolu paziņo personai, uz kuru tas attiecas."
+      }
+    ]
   },
   {
     "id": "mitigating",
     "title": "Atbildību mīkstinoši apstākļi",
-    "text": "20. pants. Atbildību mīkstinošie apstākļi\n\n(1) Atbildību par administratīvo pārkāpumu mīkstina šādi apstākļi:\n\n1) pie atbildības saucamā persona atzinusi un nožēlojusi izdarīto;\n2) pie atbildības saucamā persona labprātīgi atlīdzinājusi zaudējumu vai novērsusi nodarīto kaitējumu;\n3) pārkāpums izdarīts stipra psihiska uzbudinājuma ietekmē vai arī smagu personisku vai ģimenes apstākļu dēļ;\n4) pie atbildības saucamā persona labprātīgi pieteikusies pirms izdarītā pārkāpuma atklāšanas;\n5) pārkāpums izdarīts cietušā prettiesiskas vai amorālas uzvedības ietekmē;\n6) pārkāpumu izdarījusi sieviete grūtniecības stāvoklī vai sieviete, kuras aprūpē ir bērns vecumā līdz vienam gadam.\n\n(2) Par atbildību mīkstinošiem var atzīt arī citus apstākļus."
+    "section": "Administratīvās tiesības",
+    "items": [
+      {
+        "id": "mitigating_factors",
+        "title": "20. pants. Atbildību mīkstinošie apstākļi",
+        "text": "(1) Atbildību par administratīvo pārkāpumu mīkstina šādi apstākļi:\n\n1) pie atbildības saucamā persona atzinusi un nožēlojusi izdarīto;\n2) pie atbildības saucamā persona labprātīgi atlīdzinājusi zaudējumu vai novērsusi nodarīto kaitējumu;\n3) pārkāpums izdarīts stipra psihiska uzbudinājuma ietekmē vai smagu personisku vai ģimenes apstākļu dēļ;\n4) pie atbildības saucamā persona labprātīgi pieteikusies pirms izdarītā pārkāpuma atklāšanas;\n5) pārkāpums izdarīts cietušā prettiesiskas vai amorālas uzvedības ietekmē;\n6) pārkāpumu izdarījusi sieviete grūtniecības stāvoklī vai sieviete, kuras aprūpē ir bērns vecumā līdz vienam gadam.\n\n(2) Par atbildību mīkstinošiem var atzīt arī citus apstākļus."
+      }
+    ]
   },
   {
     "id": "aggravating",
     "title": "Atbildību pastiprinoši apstākļi",
-    "text": "21. pants. Atbildību pastiprinošie apstākļi\n\nAtbildību par administratīvo pārkāpumu var pastiprināt šādi apstākļi:\n\n1) prettiesiskā rīcība turpināta, neraugoties uz pilnvarotas amatpersonas prasību to izbeigt;\n2) pilngadīga persona pārkāpuma izdarīšanā iesaistījusi nepilngadīgo;\n3) pārkāpums izdarīts stihiskas nelaimes vai citos ārkārtējos apstākļos;\n4) pārkāpums izdarīts alkohola, narkotisko vai citu apreibinošu vielu ietekmē vai reibumā;\n5) pārkāpuma izdarīšanas motīvs ir naids pret tādām personas atšķirīgām iezīmēm kā rase, reliģiskā pārliecība, nacionālā piederība vai citas skaidri nosakāmas personas atšķirīgās iezīmes;\n6) pārkāpumu izdarījusi personu grupa."
+    "section": "Administratīvās tiesības",
+    "items": [
+      {
+        "id": "aggravating_factors",
+        "title": "21. pants. Atbildību pastiprinošie apstākļi",
+        "text": "Atbildību par administratīvo pārkāpumu var pastiprināt šādi apstākļi:\n\n1) prettiesiskā rīcība turpināta, neraugoties uz pilnvarotas amatpersonas prasību to izbeigt;\n2) pilngadīga persona pārkāpuma izdarīšanā iesaistījusi nepilngadīgo;\n3) pārkāpums izdarīts stihiskas nelaimes vai citos ārkārtējos apstākļos;\n4) pārkāpums izdarīts alkohola, narkotisko vai citu apreibinošu vielu ietekmē vai reibumā;\n5) pārkāpuma izdarīšanas motīvs ir naids pret personas atšķirīgām iezīmēm (rasi, reliģisko pārliecību, nacionālo piederību vai citām atšķirīgām pazīmēm);\n6) pārkāpumu izdarījusi personu grupa."
+      }
+    ]
   },
   {
-    "id": "detention_rights",
-    "title": "Aizturētās personas tiesības un aizturēšanas kārtība",
-    "text": "(4) Aizturētajai personai ir tiesības:\n\n1) uzaicināt aizstāvi;\n\n2) pieprasīt, lai par aizturēšanu paziņo tās tuviniekam, mācību iestādei vai darba devējam. Par nepilngadīgas personas aizturēšanu obligāti paziņo tās pārstāvim;\n\n3) iepazīties ar aizturēšanas protokolu un saņemt informāciju par aizturētā tiesībām un pienākumiem;\n\n4) izteikt savu viedokli par aizturēšanas pamatotību.\n\n(5) Aizturēt personu drīkst ne ilgāk kā uz četrām stundām. Personas aizturēšanas laiku skaita no faktiskās aizturēšanas brīža. Personai, kas atradusies alkoholisko dzērienu ietekmē vai reibumā, narkotisko vai citu apreibinošu vielu ietekmē vai reibumā, administratīvās aizturēšanas laiku skaita no brīža, kad persona spēj adekvāti uztvert notiekošo.\n\n(6) Aizturēšanas protokolu paziņo personai, uz kuru tas attiecas."
+    "id": "monument",
+    "title": "Brīvības pieminekļa un Rīgas Brāļu kapu likums",
+    "section": "Sabiedriskā kārtība",
+    "items": [
+      {
+        "id": "section9",
+        "title": "9. pants. Brīvības pieminekļa vai Rīgas Brāļu kapu zaimošana",
+        "text": "Par klaju necieņu pret Brīvības pieminekli vai Rīgas Brāļu kapiem piemēro naudas sodu fiziskai personai no 1000 līdz 2000 naudas soda vienībām (no 1000 līdz 2000 euro)."
+      },
+      {
+        "id": "section11",
+        "title": "11. pants. Procesa veikšana",
+        "text": "Administratīvā pārkāpuma procesu par šā likuma 9. un 10. pantā minētajiem pārkāpumiem veic Valsts policija un pašvaldības policija."
+      }
+    ]
   }
 ]

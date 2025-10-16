@@ -9,7 +9,7 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("Visas");
   const [toast, setToast] = useState(null);
-  const [lang, setLang] = useState("lv"); // ✅ valodas pārslēgšana tikai resursiem
+  const [lang, setLang] = useState("lv");
 
   const [cases] = useState(casesData);
   const [resources, setResources] = useState(resourcesLV);
@@ -41,9 +41,9 @@ export default function App() {
   const copyWithToast = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
-      setToast("Nokopēts ✅");
+      setToast(lang === "lv" ? "Nokopēts ✅" : "Copied ✅");
     } catch {
-      setToast("Neizdevās kopēt ❌");
+      setToast(lang === "lv" ? "Neizdevās kopēt ❌" : "Failed to copy ❌");
     } finally {
       setTimeout(() => setToast(null), 1300);
     }
@@ -102,7 +102,9 @@ export default function App() {
           )}
 
           <div className="mb-4">
-            <h3 className="font-medium mb-1">Apraksts:</h3>
+            <h3 className="font-medium mb-1">
+              {lang === "lv" ? "Apraksts:" : "Description:"}
+            </h3>
             <p className="text-gray-700 whitespace-pre-line mb-2 text-sm">
               {filledDescription}
             </p>
@@ -112,14 +114,14 @@ export default function App() {
                 className="px-2 py-1 text-xs sm:text-sm bg-blue-600 text-white rounded-md sm:rounded-lg hover:bg-blue-700 transition"
                 onClick={() => copyWithToast(filledDescription)}
               >
-                📋 Kopēt
+                📋 {lang === "lv" ? "Kopēt" : "Copy"}
               </button>
 
               <button
                 className="px-2 py-1 text-xs sm:text-sm bg-gray-800 text-white rounded-md sm:rounded-lg hover:bg-gray-700 transition"
                 onClick={() => setShowForm((s) => !s)}
               >
-                ✏️ {showForm ? "Paslēpt" : "Rediģēt"}
+                ✏️ {showForm ? (lang === "lv" ? "Paslēpt" : "Hide") : (lang === "lv" ? "Rediģēt" : "Edit")}
               </button>
             </div>
           </div>
@@ -127,7 +129,7 @@ export default function App() {
           {showForm && (
             <div className="border-t pt-3 mt-4">
               <h3 className="font-medium text-blue-700 mb-2">
-                Aizpildīt veidni
+                {lang === "lv" ? "Aizpildīt veidni" : "Fill Template"}
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {fields.map((f) => (
@@ -145,26 +147,29 @@ export default function App() {
           )}
 
           <div className="mt-6">
-            <h3 className="font-medium mb-2">Panti:</h3>
+            <h3 className="font-medium mb-2">
+              {lang === "lv" ? "Panti:" : "Articles:"}
+            </h3>
             {Array.isArray(c.articles) && c.articles.length > 0 ? (
               c.articles.map((a) => (
                 <div
-  key={a.id ?? a.text}
-  className="flex justify-between items-start sm:items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
->
-  <span className="text-sm leading-snug pr-2">{a.text}</span>
-  <button
-    className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 active:bg-blue-800 transition"
-    onClick={() => copyWithToast(a.text || "")}
-  >
-    📋 Kopēt
-  </button>
-</div>
-
+                  key={a.id ?? a.text}
+                  className="flex justify-between items-start sm:items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
+                >
+                  <span className="text-sm leading-snug pr-2">{a.text}</span>
+                  <button
+                    className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 active:bg-blue-800 transition"
+                    onClick={() => copyWithToast(a.text || "")}
+                  >
+                    📋 {lang === "lv" ? "Kopēt" : "Copy"}
+                  </button>
+                </div>
               ))
             ) : (
               <div className="text-sm text-gray-500">
-                Pantu saraksts nav pievienots.
+                {lang === "lv"
+                  ? "Pantu saraksts nav pievienots."
+                  : "No articles added."}
               </div>
             )}
           </div>
@@ -179,7 +184,7 @@ export default function App() {
       <header className="backdrop-blur-md bg-white/90 border-b sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 sm:px-10 py-3 gap-2">
           <h1 className="text-xl font-bold text-blue-700 tracking-tight text-center sm:text-left">
-            Apas palīgs
+            Veidņu palīgs
           </h1>
 
           <div className="flex justify-center sm:justify-end gap-2">
@@ -191,7 +196,7 @@ export default function App() {
                   : "bg-white text-gray-700 border hover:bg-blue-50"
               }`}
             >
-              Notikumi
+              {lang === "lv" ? "Notikumi" : "Cases"}
             </button>
             <button
               onClick={() => setActiveView("resources")}
@@ -201,13 +206,13 @@ export default function App() {
                   : "bg-white text-gray-500 border hover:bg-gray-100"
               }`}
             >
-              Resursi
+              {lang === "lv" ? "Resursi" : "Resources"}
             </button>
           </div>
         </div>
       </header>
 
-      {/* Main Content */}
+      {/* Main */}
       <main className="flex-1 w-full px-4 sm:px-10 py-6">
         {activeView === "cases" && (
           <>
@@ -216,7 +221,11 @@ export default function App() {
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Meklēt nosaukumā, aprakstā vai pantos..."
+                placeholder={
+                  lang === "lv"
+                    ? "Meklēt nosaukumā, aprakstā vai pantos..."
+                    : "Search by title, description or articles..."
+                }
                 className="w-full border border-gray-300 rounded-full px-4 py-3 text-sm shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white"
               />
               <div className="flex items-center justify-between md:justify-start gap-3">
@@ -224,10 +233,11 @@ export default function App() {
                   onClick={() => setQuery("")}
                   className="px-4 py-2 text-sm rounded-full bg-gray-100 hover:bg-gray-200 border text-gray-600"
                 >
-                  Notīrīt
+                  {lang === "lv" ? "Notīrīt" : "Clear"}
                 </button>
                 <span className="text-sm text-gray-500">
-                  Atrasti: {filteredCases.length}
+                  {lang === "lv" ? "Atrasti:" : "Found:"}{" "}
+                  {filteredCases.length}
                 </span>
               </div>
             </div>
@@ -249,7 +259,7 @@ export default function App() {
               ))}
             </div>
 
-            {/* Cases Grid */}
+            {/* Cases grid */}
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredCases.map((c) => (
                 <div
@@ -290,27 +300,26 @@ export default function App() {
               </button>
             </div>
 
-            <p className="text-sm text-gray-500 mb-8">
-              {lang === "lv"
-                ? "Šī sadaļa ir informatīva — tajā apkopoti tiesību panti, pienākumi un atbildību mīkstinoši/pastiprinoši apstākļi."
-                : "This section contains reference materials — rights, obligations, and mitigating/aggravating circumstances."}
-            </p>
-
-            <div className="space-y-6">
-              {resources.map((r) => (
-                <div
-                  key={r.id}
-                  className="bg-white/80 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow transition"
-                >
-                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                    {r.title}
-                  </h4>
-                  <p className="text-[15px] text-gray-700 leading-relaxed whitespace-pre-line">
-                    {r.text}
-                  </p>
-                </div>
-              ))}
-            </div>
+            {resources.map((group) => (
+              <div key={group.id} className="mb-6">
+                <h3 className="text-lg font-bold text-blue-700 mb-2">
+                  {group.title}
+                </h3>
+                {group.items.map((item) => (
+                  <details
+                    key={item.id}
+                    className="bg-white border rounded-lg p-4 mb-2 shadow-sm"
+                  >
+                    <summary className="cursor-pointer text-gray-800 font-medium">
+                      {item.title}
+                    </summary>
+                    <p className="text-sm text-gray-700 mt-2 whitespace-pre-line">
+                      {item.text}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            ))}
           </section>
         )}
       </main>
