@@ -55,7 +55,7 @@ export default function App() {
     const fields = [
       "datums",
       "laiks",
-      "vieta",
+      "adrese",
       "pilsonis",
       "personas_kods",
       "epasts",
@@ -117,7 +117,7 @@ export default function App() {
     className="px-2 py-1 text-xs sm:text-sm bg-gray-600 text-white rounded-md sm:rounded-lg hover:bg-gray-700 transition"
     onClick={() => setShowForm((s) => !s)}
   >
-    ✏️ {showForm ? "Paslēpt" : "Veidne"}
+    ✏️ {showForm ? "Paslēpt" : "Rediģēt"}
   </button>
 </div>
 

@@ -3,7 +3,7 @@
     "id": 5,
     "title": "Elektroskrējriteni divatā",
     "category": "CSN",
-    "description": "{datums}, plkst. {laiks}, {vieta}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
+    "description": "{datums}, plkst. {laiks}, {adrese}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
     "articles": [
       {
         "id": 1,
@@ -23,7 +23,7 @@
     "id": 2,
     "title": "Iebrauca zem 301. ceļa zīmes",
     "category": "CSN",
-    "description": "{datums} plkst. {laiks}, {pilsonis} Republikas pilsonis (personas kods {personas_kods}) vadīja transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas Nr. {reg_nr}, pa {vieta} virzienā no {no} uz {uz}, neievērojot ceļa zīmes Nr. 301. (Iebraukt aizliegts) prasības.\n\nPārkāpumu pierāda: Axis Body Nr. {axis_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera}.",
+    "description": "{datums} plkst. {laiks}, {pilsonis} Republikas pilsonis (personas kods {personas_kods}) vadīja transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas Nr. {reg_nr}, pa {adrese} virzienā no {no} uz {uz}, neievērojot ceļa zīmes Nr. 301. (Iebraukt aizliegts) prasības.\n\nPārkāpumu pierāda: Axis Body Nr. {axis_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera}.",
     "articles": [
       {
         "id": 1,
@@ -51,7 +51,7 @@
     "id": 3,
     "title": "Nepakļaušanās amatpersonas rīkojumam",
     "category": "Sabiedriskā kārtība",
-    "description": "{datums} plkst. {laiks}, {vieta}, persona {pilsonis} (personas kods {personas_kods}, deklarētā dzīvesvieta {dzīvesvieta}), nepildīja amatpersonas (pašvaldības policijas darbinieka) likumīgās prasības, proti — pēc urinēšanas neatļautā vietā, skŗeja prom no notikuma vietas un nepildīja pašvaldības policijas darbinieku vairākkārtēju rīkojumu palikt uz vietas.\n\nNotikums fiksēts ar AXIS Nr. {axis_nr} un kameru {kamera}.",
+    "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}, deklarētā dzīvesvieta {dzīvesvieta}), nepildīja amatpersonas (pašvaldības policijas darbinieka) likumīgās prasības, proti — pēc urinēšanas neatļautā vietā, skŗeja prom no notikuma vietas un nepildīja pašvaldības policijas darbinieku vairākkārtēju rīkojumu palikt uz vietas.\n\nNotikums fiksēts ar AXIS Nr. {axis_nr} un kameru {kamera}.",
     "articles": [
       {
         "id": 1,
@@ -75,7 +75,7 @@
     "id": 4,
     "title": "Alkohola lietošana sabiedriskā vietā",
     "category": "Sabiedriskā kārtība",
-    "description": "{datums} plkst. {laiks}, {vieta}, persona {pilsonis} (personas kods {personas_kods}) lietoja alkoholiskos dzērienus publiskā vietā, kas nav paredzēta šim nolūkam. Personai paskaidrots pārkāpums un piemērojamā atbildība.",
+    "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}) lietoja alkoholiskos dzērienus publiskā vietā, kas nav paredzēta šim nolūkam. Personai paskaidrots pārkāpums un piemērojamā atbildība.",
     "articles": [
       {
         "id": 1,
@@ -91,7 +91,7 @@
   "id": 1,
   "title": "Sabiedriskās kārtības traucēšana (atkailināšanās publiskā vietā)",
   "category": "Sabiedriskā kārtība",
-  "description": "{datums}, plkst. {laiks}, {vieta}, {persona}, dzimis {dzimsanas_datums}, elektroniskā pasta adrese: {epasts}, ar savu uzvedību pārkāpa vispārpieņemtās uzvedības normas, traucēja sabiedrisko mieru un kārtību, novilka bikses un atkailināja dzimumorgānus. Tādejādi ar savu rīcību pārkāpis Administratīvo sodu likuma par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā 11. panta pirmās daļas minētās prasības.\n\nPārkāpums fiksēts ar kameru {kamera_vieta}. Izmantotas Axis kameras Nr. {kamera_nr}.",
+  "description": "{datums}, plkst. {laiks}, {adrese}, {persona}, dzimis {dzimsanas_datums}, elektroniskā pasta adrese: {epasts}, ar savu uzvedību pārkāpa vispārpieņemtās uzvedības normas, traucēja sabiedrisko mieru un kārtību, novilka bikses un atkailināja dzimumorgānus. Tādejādi ar savu rīcību pārkāpis Administratīvo sodu likuma par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā 11. panta pirmās daļas minētās prasības.\n\nPārkāpums fiksēts ar kameru {kamera_vieta}. Izmantotas Axis kameras Nr. {kamera_nr}.",
   "articles": [
     {
       "id": 1,
