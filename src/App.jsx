@@ -106,20 +106,21 @@ export default function App() {
             </p>
 
             <div className="flex flex-wrap gap-2">
-              <button
-                className="px-3 py-1 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-                onClick={() => copyWithToast(filledDescription)}
-              >
-                📋 Kopēt aprakstu
-              </button>
+  <button
+    className="px-2 py-1 text-xs sm:text-sm bg-blue-600 text-white rounded-md sm:rounded-lg hover:bg-blue-700 transition"
+    onClick={() => copyWithToast(filledDescription)}
+  >
+    📋 Kopēt
+  </button>
 
-              <button
-                className="px-3 py-1 text-sm bg-gray-800 text-white rounded-lg hover:bg-gray-700"
-                onClick={() => setShowForm((s) => !s)}
-              >
-                ✏️ {showForm ? "Paslēpt formu" : "Aizpildīt veidni"}
-              </button>
-            </div>
+  <button
+    className="px-2 py-1 text-xs sm:text-sm bg-gray-600 text-white rounded-md sm:rounded-lg hover:bg-gray-700 transition"
+    onClick={() => setShowForm((s) => !s)}
+  >
+    ✏️ {showForm ? "Paslēpt" : "Veidne"}
+  </button>
+</div>
+
           </div>
 
           {showForm && (
