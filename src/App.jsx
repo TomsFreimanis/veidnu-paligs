@@ -43,47 +43,10 @@ export default function App() {
     }
   };
 
-  useEffect(() => setQuery(""), [activeCategory]);
+  useEffect(() => {
+    setQuery("");
+  }, [activeCategory]);
 
-  // ✅ Komponents: aizpildāmā veidne
-  function FillableTemplate({ template }) {
-    const [fields, setFields] = useState({});
-
-    const placeholders = Array.from(template.matchAll(/{(.*?)}/g)).map((m) => m[1]);
-
-    const result = placeholders.reduce((txt, key) => {
-      return txt.replaceAll(`{${key}}`, fields[key] || `(${key})`);
-    }, template);
-
-    return (
-      <div className="mt-4 border-t pt-3">
-        <h3 className="font-semibold mb-2 text-blue-700">Aizpildīt veidni</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-3">
-          {placeholders.map((p) => (
-            <input
-              key={p}
-              placeholder={p}
-              className="border rounded-lg p-2 text-sm"
-              onChange={(e) => setFields((f) => ({ ...f, [p]: e.target.value }))}
-            />
-          ))}
-        </div>
-        <textarea
-          readOnly
-          value={result}
-          className="w-full border rounded-lg p-2 text-sm h-48 whitespace-pre-line"
-        />
-        <button
-          className="mt-2 px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
-          onClick={() => copyWithToast(result)}
-        >
-          📋 Kopēt aizpildīto tekstu
-        </button>
-      </div>
-    );
-  }
-
-  // ✅ Notikuma karte
   const CaseCard = ({ c }) => (
     <div
       className="p-4 bg-white border rounded-xl shadow-sm hover:shadow-md cursor-pointer transition"
@@ -101,242 +64,200 @@ export default function App() {
     </div>
   );
 
-  // ✅ Notikuma detaļu logs
-  const CaseDetails = ({ c }) => {
-    const [showFill, setShowFill] = useState(false);
-    return (
-      <div className="fixed inset-0 z-50">
-        <div className="absolute inset-0 bg-black/50" onClick={() => setSelectedCase(null)} />
-        <div className="absolute inset-x-0 bottom-0 md:inset-0 md:m-auto md:max-w-lg bg-white rounded-t-2xl md:rounded-2xl shadow-lg p-6 overflow-y-auto max-h-[95vh]">
-          <button
-            className="absolute top-3 right-4 text-gray-500 hover:text-gray-800"
-            onClick={() => setSelectedCase(null)}
-            aria-label="Aizvērt"
-          >
-            ✕
-          </button>
-
-          <h2 className="text-xl font-bold text-blue-700 mb-1">{c.title}</h2>
-          {c.category && <div className="text-xs text-gray-500 mb-3">{c.category}</div>}
-
-          <div className="mb-4">
-            <h3 className="font-medium mb-1">Apraksts</h3>
-            <p className="text-gray-700 mb-2 whitespace-pre-line">{c.description}</p>
-           <button
-  className="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-xl hover:bg-blue-700 active:bg-blue-800 shadow-md w-full md:w-auto transition"
-  onClick={() => copyWithToast(c.description)}
->
-  📋 Kopēt aprakstu
-</button>
-
-            <button
-              className="px-3 py-1 text-sm border rounded-lg hover:bg-gray-50"
-              onClick={() => setShowFill((s) => !s)}
-            >
-              ✏️ {showFill ? "Paslēpt formu" : "Aizpildīt veidni"}
-            </button>
-            {showFill && <FillableTemplate template={c.description} />}
-          </div>
-
-          <div>
-            <h3 className="font-medium mb-2">Panti</h3>
-            {Array.isArray(c.articles) && c.articles.length > 0 ? (
-              c.articles.map((a) => (
-                <div
-                  key={a.id ?? a.text}
-                  className="flex justify-between items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
-                >
-                  <span className="text-sm">{a.text}</span>
-                  <button
-                    className="text-blue-600 text-sm font-medium hover:underline"
-                    onClick={() => copyWithToast(a.text || "")}
-                  >
-                    Kopēt
-                  </button>
-                </div>
-              ))
-            ) : (
-              <div className="text-sm text-gray-500">Pantu saraksts nav pievienots.</div>
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  };
-
-  // ✅ Peldošā ātrās informācijas poga
-  const QuickInfoButton = () => {
-    const [open, setOpen] = useState(false);
-    const quickItems = [
-      { id: "rights", label: "Tiesības un pienākumi" },
-      { id: "mitigating", label: "Mīkstinoši apstākļi" },
-      { id: "aggravating", label: "Pastiprinoši apstākļi" },
-    ];
-
-    const findText = (id) =>
-      resources.find((r) => r.id === id)?.text || "Nav pievienots saturs.";
-
-    return (
-      <>
+  const CaseDetails = ({ c }) => (
+    <div className="fixed inset-0 z-50">
+      <div
+        className="absolute inset-0 bg-black/50"
+        onClick={() => setSelectedCase(null)}
+      />
+      <div className="absolute inset-x-0 bottom-0 md:inset-0 md:m-auto md:max-w-lg
+                      bg-white rounded-t-2xl md:rounded-2xl shadow-lg p-6">
         <button
-          onClick={() => setOpen((o) => !o)}
-          className="fixed bottom-6 right-6 bg-blue-600 text-white rounded-full w-14 h-14 shadow-lg hover:bg-blue-700 transition flex items-center justify-center text-2xl z-50"
+          className="absolute top-3 right-4 text-gray-500 hover:text-gray-800"
+          onClick={() => setSelectedCase(null)}
         >
-          ℹ️
+          ✕
         </button>
 
-        {open && (
-          <div className="fixed bottom-24 right-6 bg-white border shadow-xl rounded-2xl p-4 w-72 max-h-[60vh] overflow-auto z-50">
-            <h3 className="text-lg font-semibold text-blue-700 mb-3">Ātrā informācija</h3>
-            {quickItems.map((item) => (
-              <div key={item.id} className="mb-3">
-                <div className="flex justify-between items-center mb-1">
-                  <span className="font-medium">{item.label}</span>
-                  <button
-                    className="text-sm text-blue-600 hover:underline"
-                    onClick={() => copyWithToast(findText(item.id))}
-                  >
-                    Kopēt
-                  </button>
-                </div>
-                <p className="text-sm text-gray-700 whitespace-pre-line">{findText(item.id)}</p>
-              </div>
-            ))}
-            <div className="text-right mt-4">
-              <button
-                onClick={() => setOpen(false)}
-                className="text-sm text-gray-500 hover:text-gray-700"
-              >
-                Aizvērt
-              </button>
-            </div>
-          </div>
+        <h2 className="text-xl font-bold text-blue-700 mb-1">{c.title}</h2>
+        {c.category && (
+          <div className="text-xs text-gray-500 mb-3">{c.category}</div>
         )}
-      </>
-    );
-  };
 
-  // ✅ Galvenais izkārtojums
-  return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
-      <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-[260px,1fr] gap-4 p-4 md:p-6">
-        <aside className="bg-white border rounded-2xl p-4 shadow-sm h-fit sticky top-4">
-          <h2 className="text-xl font-semibold mb-4 text-blue-700">Veidņu palīgs</h2>
-          <nav className="space-y-2 mb-6">
-            <button
-              className={`block w-full text-left px-3 py-2 rounded-lg ${
-                activeView === "cases"
-                  ? "bg-blue-100 text-blue-700 font-semibold"
-                  : "hover:bg-gray-100"
-              }`}
-              onClick={() => setActiveView("cases")}
-            >
-              Notikumi
-            </button>
-            <button
-              className={`block w-full text-left px-3 py-2 rounded-lg ${
-                activeView === "resources"
-                  ? "bg-blue-100 text-blue-700 font-semibold"
-                  : "hover:bg-gray-100"
-              }`}
-              onClick={() => setActiveView("resources")}
-            >
-              Resursi
-            </button>
-          </nav>
-
-          {activeView === "cases" && (
-            <>
-              <h3 className="text-sm font-semibold text-gray-700 mb-2">Kategorijas</h3>
-              <div className="flex flex-wrap gap-2">
-                {categories.map((cat) => (
-                  <button
-                    key={cat}
-                    className={`px-3 py-1 rounded-full border text-sm ${
-                      activeCategory === cat
-                        ? "bg-blue-600 text-white border-blue-600"
-                        : "bg-white hover:bg-gray-50"
-                    }`}
-                    onClick={() => setActiveCategory(cat)}
-                  >
-                    {cat}
-                  </button>
-                ))}
-              </div>
-            </>
-          )}
-        </aside>
-
-        <main className="bg-white border rounded-2xl p-6 shadow-sm overflow-hidden">
-          {activeView === "cases" && (
-            <>
-              <div className="flex items-center gap-2 mb-4">
-                <input
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Meklēt nosaukumā, aprakstā vai pantos..."
-                  className="w-full md:w-2/3 border rounded-lg px-3 py-2"
-                />
-                <button
-                  onClick={() => setQuery("")}
-                  className="px-3 py-2 border rounded-lg hover:bg-gray-50"
-                >
-                  Notīrīt
-                </button>
-                <div className="ml-auto text-sm text-gray-500">
-                  Atrasti: {filteredCases.length}
-                </div>
-              </div>
-
-              {filteredCases.length === 0 ? (
-                <div className="text-gray-500 text-sm">
-                  Nav atbilstošu lietu. Mainiet kategoriju vai meklēšanas frāzi.
-                </div>
-              ) : (
-                <div className="grid gap-4 md:grid-cols-2">
-                  {filteredCases.map((c) => (
-                    <CaseCard key={c.id} c={c} />
-                  ))}
-                </div>
-              )}
-            </>
-          )}
-
-          {activeView === "resources" && (
-            <>
-              <div className="space-y-4">
-                {resources.map((r) => (
-                  <div
-                    key={r.id}
-                    className="bg-gray-50 border rounded-xl p-4 hover:shadow-sm transition"
-                  >
-                    <h4 className="text-base font-semibold text-blue-700 mb-1">
-                      {r.title}
-                    </h4>
-                    <p className="text-gray-700 mb-2 whitespace-pre-line">{r.text}</p>
-                    <button
-                      onClick={() => copyWithToast(r.text || "")}
-                      className="text-sm px-3 py-1 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-                    >
-                      Kopēt tekstu
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </>
-          )}
-        </main>
-      </div>
-
-      {selectedCase && <CaseDetails c={selectedCase} />}
-
-      {toast && (
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-lg text-sm z-[60]">
-          {toast}
+        <div className="mb-4">
+          <h3 className="font-medium mb-1">Apraksts</h3>
+          <p className="text-gray-700 mb-2 whitespace-pre-line">
+            {c.description}
+          </p>
+          <button
+            className="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-xl hover:bg-blue-700 active:bg-blue-800 shadow-md w-full md:w-auto transition"
+            onClick={() => copyWithToast(c.description || "")}
+          >
+            📋 Kopēt aprakstu
+          </button>
         </div>
-      )}
 
-      <QuickInfoButton />
+        <div>
+          <h3 className="font-medium mb-2">Panti</h3>
+          {Array.isArray(c.articles) && c.articles.length > 0 ? (
+            c.articles.map((a) => (
+              <div
+                key={a.id ?? a.text}
+                className="flex justify-between items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
+              >
+                <span className="text-sm">{a.text}</span>
+                <button
+                  className="text-blue-600 text-sm font-medium hover:underline"
+                  onClick={() => copyWithToast(a.text || "")}
+                >
+                  Kopēt
+                </button>
+              </div>
+            ))
+          ) : (
+            <div className="text-sm text-gray-500">
+              Pantu saraksts nav pievienots.
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
+
+return (
+  <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 flex flex-col">
+    {/* Header */}
+    <header className="backdrop-blur-md bg-white/70 border-b sticky top-0 z-50 shadow-sm">
+      <div className="flex items-center justify-between px-10 py-3 w-full">
+        <h1 className="text-xl font-bold text-blue-700 tracking-tight">
+          Veidņu palīgs
+        </h1>
+        <div className="flex gap-2">
+          <button
+            onClick={() => setActiveView("cases")}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+              activeView === "cases"
+                ? "bg-blue-600 text-white shadow-sm"
+                : "bg-white/60 text-gray-700 hover:bg-blue-50"
+            }`}
+          >
+            Notikumi
+          </button>
+          <button
+            onClick={() => setActiveView("resources")}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
+              activeView === "resources"
+                ? "bg-gray-200 text-gray-700 shadow-sm"
+                : "bg-white/60 text-gray-500 hover:bg-gray-100"
+            }`}
+          >
+            Resursi
+          </button>
+        </div>
+      </div>
+    </header>
+
+    {/* Main */}
+    <main className="flex-1 w-full px-10 py-8">
+      {activeView === "cases" && (
+        <>
+          <div className="flex flex-col md:flex-row md:items-center gap-3 mb-8">
+            <input
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Meklēt nosaukumā, aprakstā vai pantos..."
+              className="w-full md:w-2/3 border border-gray-300 rounded-lg px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            />
+            <button
+              onClick={() => setQuery("")}
+              className="px-3 py-2 border rounded-lg hover:bg-gray-50 text-sm"
+            >
+              Notīrīt
+            </button>
+            <div className="ml-auto text-sm text-gray-500">
+              Atrasti: {filteredCases.length}
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-2 mb-8">
+            {categories.map((cat) => (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className={`px-4 py-1.5 rounded-full text-sm font-medium border transition ${
+                  activeCategory === cat
+                    ? "bg-blue-600 text-white border-blue-600 shadow-sm"
+                    : "bg-white text-gray-700 hover:bg-gray-50"
+                }`}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {filteredCases.map((c) => (
+              <div
+                key={c.id}
+                onClick={() => setSelectedCase(c)}
+                className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition p-5 cursor-pointer flex flex-col justify-between"
+              >
+                <div>
+                  <h3 className="text-base font-semibold text-blue-700 mb-2">
+                    {c.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 line-clamp-3">
+                    {c.description}
+                  </p>
+                </div>
+                {c.category && (
+                  <div className="text-xs text-gray-500 mt-3 italic">
+                    {c.category}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {activeView === "resources" && (
+        <section className="px-4 md:px-10">
+          <h2 className="text-2xl font-semibold text-blue-700 mb-4">Resursi</h2>
+          <p className="text-sm text-gray-500 mb-8">
+            Šī sadaļa ir informatīva — tajā apkopoti tiesību panti, pienākumi
+            un atbildību mīkstinoši/pastiprinoši apstākļi.
+          </p>
+
+          <div className="space-y-6">
+            {resources.map((r) => (
+              <div
+                key={r.id}
+                className="bg-white/80 border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow transition"
+              >
+                <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                  {r.title}
+                </h4>
+                <p className="text-[15px] text-gray-700 leading-relaxed whitespace-pre-line">
+                  {r.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+    </main>
+
+    {toast && (
+      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-lg text-sm z-[60]">
+        {toast}
+      </div>
+    )}
+
+    {selectedCase && <CaseDetails c={selectedCase} />}
+  </div>
+);
+
+
+
 }

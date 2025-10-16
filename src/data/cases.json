@@ -3,7 +3,7 @@
     "id": 5,
     "title": "Elektroskrējriteni divatā",
     "category": "CSN",
-    "description": "2025.gada {datums}, plkst. {laiks}, {vieta}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
+    "description": "{datums}, plkst. {laiks}, {vieta}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
     "articles": [
       {
         "id": 1,
