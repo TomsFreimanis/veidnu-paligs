@@ -111,14 +111,14 @@ export default function App() {
 
             <div className="flex flex-wrap gap-2">
               <button
-                className="px-2 py-1 text-xs sm:text-sm bg-blue-600 text-white rounded-md sm:rounded-lg hover:bg-blue-700 transition"
+                className="px-2 py-1 text-xs bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
                 onClick={() => copyWithToast(filledDescription)}
               >
                 📋 {lang === "lv" ? "Kopēt" : "Copy"}
               </button>
 
               <button
-                className="px-2 py-1 text-xs sm:text-sm bg-gray-800 text-white rounded-md sm:rounded-lg hover:bg-gray-700 transition"
+                className="px-2 py-1 text-xs bg-gray-800 text-white rounded-md hover:bg-gray-700 transition"
                 onClick={() => setShowForm((s) => !s)}
               >
                 ✏️ {showForm ? (lang === "lv" ? "Paslēpt" : "Hide") : (lang === "lv" ? "Rediģēt" : "Edit")}
@@ -158,7 +158,7 @@ export default function App() {
                 >
                   <span className="text-sm leading-snug pr-2">{a.text}</span>
                   <button
-                    className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 active:bg-blue-800 transition"
+                    className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
                     onClick={() => copyWithToast(a.text || "")}
                   >
                     📋 {lang === "lv" ? "Kopēt" : "Copy"}
@@ -179,7 +179,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 flex flex-col transition-all duration-300">
       {/* Header */}
       <header className="backdrop-blur-md bg-white/90 border-b sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 sm:px-10 py-3 gap-2">
@@ -208,12 +208,24 @@ export default function App() {
             >
               {lang === "lv" ? "Resursi" : "Resources"}
             </button>
+            <button
+              onClick={() => setLang(lang === "lv" ? "en" : "lv")}
+              className="px-4 py-2 rounded-full border text-sm bg-gray-50 hover:bg-gray-100"
+            >
+              {lang === "lv" ? "EN" : "LV"}
+            </button>
           </div>
         </div>
       </header>
 
       {/* Main */}
-      <main className="flex-1 w-full px-4 sm:px-10 py-6">
+      <main
+        className={`flex-1 w-full px-4 sm:px-10 py-6 ${
+          activeView === "resources"
+            ? "bg-gradient-to-b from-white via-blue-50 to-gray-100 transition-all"
+            : ""
+        }`}
+      >
         {activeView === "cases" && (
           <>
             {/* Search */}
@@ -286,36 +298,28 @@ export default function App() {
           </>
         )}
 
+        {/* RESOURCES */}
         {activeView === "resources" && (
-          <section className="px-4 md:px-10">
-            <div className="flex items-center justify-between mb-4">
-              <h2 className="text-2xl font-semibold text-blue-700">
-                {lang === "lv" ? "Resursi" : "Resources"}
-              </h2>
-              <button
-                onClick={() => setLang(lang === "lv" ? "en" : "lv")}
-                className="px-3 py-1.5 text-sm border rounded-full bg-white hover:bg-gray-100 text-gray-600"
-              >
-                {lang === "lv" ? "EN" : "LV"}
-              </button>
-            </div>
-
+          <section className="max-w-5xl mx-auto mt-4 space-y-6">
             {resources.map((group) => (
-              <div key={group.id} className="mb-6">
-                <h3 className="text-lg font-bold text-blue-700 mb-2">
+              <div
+                key={group.id}
+                className="bg-white/70 backdrop-blur-md border border-gray-200 rounded-2xl shadow-sm hover:shadow transition-all p-5"
+              >
+                <h3 className="text-lg font-bold text-blue-700 mb-3">
                   {group.title}
                 </h3>
                 {group.items.map((item) => (
                   <details
                     key={item.id}
-                    className="bg-white border rounded-lg p-4 mb-2 shadow-sm"
+                    className="group border rounded-lg mb-2 transition-all overflow-hidden"
                   >
-                    <summary className="cursor-pointer text-gray-800 font-medium">
+                    <summary className="cursor-pointer select-none bg-gray-50 hover:bg-gray-100 px-4 py-2 text-gray-800 font-medium">
                       {item.title}
                     </summary>
-                    <p className="text-sm text-gray-700 mt-2 whitespace-pre-line">
+                    <div className="px-4 py-3 text-sm text-gray-700 bg-white animate-accordion">
                       {item.text}
-                    </p>
+                    </div>
                   </details>
                 ))}
               </div>
@@ -325,7 +329,7 @@ export default function App() {
       </main>
 
       {toast && (
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-lg text-sm z-[60]">
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-lg text-sm z-[60] animate-fadeIn">
           {toast}
         </div>
       )}
