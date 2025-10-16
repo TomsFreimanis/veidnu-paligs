@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Elektroskrējriteni divatā",
+    "category": "CSN",
+    "description": "2025.gada {datums}, plkst. {laiks}, {vieta}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
+    "articles": [
+      {
+        "id": 1,
+        "text": "Ceļu satiksmes noteikumi 212.7.4. Elektroskrejriteņu vadītājiem aizliegts: vest pasažieri."
+      },
+      {
+        "id": 2,
+        "text": "Ceļu satiksmes likums 68. Par to noteikumu pārkāpšanu, kuri paredz papildu prasības velosipēdu vai elektroskrejriteņu vadītājiem, piemēro brīdinājumu vai naudas sodu velosipēda vai elektroskrejriteņa vadītājam no divām līdz četrpadsmit naudas soda vienībām."
+      },
+      {
+        "id": 3,
+        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma 51. panta devītajā daļā, 52. panta pirmajā, otrajā un ceturtajā daļā, 53. panta pirmajā, otrajā un vienpadsmitajā daļā, 54. panta sestajā daļā, 55. pantā (izņemot 27. daļā norādītos pārkāpumus, kurus izdarījis cita transportlīdzekļa vadītājs), 57., 58., 60., 68., 68.1., 70., 71., 74.–79., un 82. pantā minētajiem pārkāpumiem veic pašvaldības policija."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Iebrauca zem 301. ceļa zīmes",
+    "category": "CSN",
+    "description": "{datums} plkst. {laiks}, {pilsonis} Republikas pilsonis (personas kods {personas_kods}) vadīja transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas Nr. {reg_nr}, pa {vieta} virzienā no {no} uz {uz}, neievērojot ceļa zīmes Nr. 301. (Iebraukt aizliegts) prasības.\n\nPārkāpumu pierāda: Axis Body Nr. {axis_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera}.",
+    "articles": [
+      {
+        "id": 1,
+        "text": "Administratīvās atbildības likums 153.1.1. Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+      },
+      {
+        "id": 2,
+        "text": "Administratīvās atbildības likums 116.2. Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+      },
+      {
+        "id": 3,
+        "text": "Ceļu satiksmes likums 75.2. Par tās prasības neizpildīšanu, kura noteikta ar 301., 319. vai 321. ceļa zīmi, piemēro naudas sodu velosipēda vai elektroskrejriteņa vadītājam divu naudas soda vienību apmērā, bet cita transportlīdzekļa vadītājam — vienpadsmit naudas soda vienību apmērā."
+      },
+      {
+        "id": 4,
+        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma noteiktajiem pārkāpumiem veic pašvaldības policija."
+      },
+      {
+        "id": 5,
+        "text": "Ceļu satiksmes noteikumi 259.1. Aizlieguma zīmes nosaka vai atceļ noteiktus ceļu satiksmes ierobežojumus. 301. zīme — 'Iebraukt aizliegts'. Aizliegts iebraukt jebkādiem transportlīdzekļiem."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Nepakļaušanās amatpersonas rīkojumam",
+    "category": "Sabiedriskā kārtība",
+    "description": "{datums} plkst. {laiks}, {vieta}, persona {pilsonis} (personas kods {personas_kods}, deklarētā dzīvesvieta {dzīvesvieta}), nepildīja amatpersonas (pašvaldības policijas darbinieka) likumīgās prasības, proti — pēc urinēšanas neatļautā vietā, skŗeja prom no notikuma vietas un nepildīja pašvaldības policijas darbinieku vairākkārtēju rīkojumu palikt uz vietas.\n\nNotikums fiksēts ar AXIS Nr. {axis_nr} un kameru {kamera}.",
+    "articles": [
+      {
+        "id": 1,
+        "text": "Administratīvās atbildības likums 153.1.1. Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru."
+      },
+      {
+        "id": 2,
+        "text": "Administratīvās atbildības likums 116.2. Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+      },
+      {
+        "id": 3,
+        "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 4. pants — par amatpersonas likumīgo prasību nepildīšanu vai darbības traucēšanu piemēro brīdinājumu vai naudas sodu līdz 140 vienībām."
+      },
+      {
+        "id": 4,
+        "text": "Administratīvo sodu likums, 29.6. pants — par šā likuma 4. pantā minēto pārkāpumu procesu veic pašvaldības policija."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Alkohola lietošana sabiedriskā vietā",
+    "category": "Sabiedriskā kārtība",
+    "description": "{datums} plkst. {laiks}, {vieta}, persona {pilsonis} (personas kods {personas_kods}) lietoja alkoholiskos dzērienus publiskā vietā, kas nav paredzēta šim nolūkam. Personai paskaidrots pārkāpums un piemērojamā atbildība.",
+    "articles": [
+      {
+        "id": 1,
+        "text": "Rīgas domes saistošie noteikumi Nr. 47, 3. punkts — par alkoholisko dzērienu lietošanu publiskā vietā, kas nav paredzēta šim nolūkam."
+      },
+      {
+        "id": 2,
+        "text": "Administratīvās atbildības likums 171. pants — par alkoholisko dzērienu lietošanu neatļautā vietā piemēro brīdinājumu vai naudas sodu."
+      }
+    ]
+  }
+]
