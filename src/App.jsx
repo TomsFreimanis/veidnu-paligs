@@ -149,17 +149,18 @@ export default function App() {
             {Array.isArray(c.articles) && c.articles.length > 0 ? (
               c.articles.map((a) => (
                 <div
-                  key={a.id ?? a.text}
-                  className="flex justify-between items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
-                >
-                  <span className="text-sm">{a.text}</span>
-                  <button
-                    className="text-blue-600 text-sm font-medium hover:underline"
-                    onClick={() => copyWithToast(a.text)}
-                  >
-                    Kopēt
-                  </button>
-                </div>
+  key={a.id ?? a.text}
+  className="flex justify-between items-start sm:items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
+>
+  <span className="text-sm leading-snug pr-2">{a.text}</span>
+  <button
+    className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 active:bg-blue-800 transition"
+    onClick={() => copyWithToast(a.text || "")}
+  >
+    📋 Kopēt
+  </button>
+</div>
+
               ))
             ) : (
               <div className="text-sm text-gray-500">
@@ -178,7 +179,7 @@ export default function App() {
       <header className="backdrop-blur-md bg-white/90 border-b sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 sm:px-10 py-3 gap-2">
           <h1 className="text-xl font-bold text-blue-700 tracking-tight text-center sm:text-left">
-            Veidņu palīgs
+            Apas palīgs
           </h1>
 
           <div className="flex justify-center sm:justify-end gap-2">
