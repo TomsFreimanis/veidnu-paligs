@@ -1,24 +1,5 @@
 [
-  {
-    "id": 5,
-    "title": "Elektroskrējriteni divatā",
-    "category": "CSN",
-    "description": "{datums}, plkst. {laiks}, {adrese}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
-    "articles": [
-      {
-        "id": 1,
-        "text": "Ceļu satiksmes noteikumi 212.7.4. Elektroskrejriteņu vadītājiem aizliegts: vest pasažieri."
-      },
-      {
-        "id": 2,
-        "text": "Ceļu satiksmes likums 68. Par to noteikumu pārkāpšanu, kuri paredz papildu prasības velosipēdu vai elektroskrejriteņu vadītājiem, piemēro brīdinājumu vai naudas sodu velosipēda vai elektroskrejriteņa vadītājam no divām līdz četrpadsmit naudas soda vienībām."
-      },
-      {
-        "id": 3,
-        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma 51. panta devītajā daļā, 52. panta pirmajā, otrajā un ceturtajā daļā, 53. panta pirmajā, otrajā un vienpadsmitajā daļā, 54. panta sestajā daļā, 55. pantā (izņemot 27. daļā norādītos pārkāpumus, kurus izdarījis cita transportlīdzekļa vadītājs), 57., 58., 60., 68., 68.1., 70., 71., 74.–79., un 82. pantā minētajiem pārkāpumiem veic pašvaldības policija."
-      }
-    ]
-  },
+  
   {
     "id": 2,
     "title": "Iebrauca zem 301. ceļa zīmes",
@@ -108,7 +89,27 @@
     {
       "id": 4,
       "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 30.1. Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
-    }
+    },
+    {
+    "id": 5,
+    "title": "Elektroskrējriteni divatā",
+    "category": "CSN",
+    "description": "{datums}, plkst. {laiks}, {adrese}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
+    "articles": [
+      {
+        "id": 1,
+        "text": "Ceļu satiksmes noteikumi 212.7.4. Elektroskrejriteņu vadītājiem aizliegts: vest pasažieri."
+      },
+      {
+        "id": 2,
+        "text": "Ceļu satiksmes likums 68. Par to noteikumu pārkāpšanu, kuri paredz papildu prasības velosipēdu vai elektroskrejriteņu vadītājiem, piemēro brīdinājumu vai naudas sodu velosipēda vai elektroskrejriteņa vadītājam no divām līdz četrpadsmit naudas soda vienībām."
+      },
+      {
+        "id": 3,
+        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma 51. panta devītajā daļā, 52. panta pirmajā, otrajā un ceturtajā daļā, 53. panta pirmajā, otrajā un vienpadsmitajā daļā, 54. panta sestajā daļā, 55. pantā (izņemot 27. daļā norādītos pārkāpumus, kurus izdarījis cita transportlīdzekļa vadītājs), 57., 58., 60., 68., 68.1., 70., 71., 74.–79., un 82. pantā minētajiem pārkāpumiem veic pašvaldības policija."
+      }
+    ]
+  }
   ]
 }
 

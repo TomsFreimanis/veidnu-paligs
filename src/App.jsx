@@ -176,7 +176,7 @@ export default function App() {
       <header className="backdrop-blur-md bg-white/90 border-b sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 sm:px-10 py-3 gap-2">
           <h1 className="text-xl font-bold text-blue-700 tracking-tight text-center sm:text-left">
-            Veidņu palīgs
+            Apas palīgs
           </h1>
 
           <div className="flex justify-center sm:justify-end gap-2">
