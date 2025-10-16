@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import casesData from "./data/cases.json";
-import resourcesData from "./data/resources.json";
+import resourcesLV from "./data/resources.json";
+import resourcesEN from "./data/resources_en.json";
 
 export default function App() {
   const [activeView, setActiveView] = useState("cases");
@@ -8,9 +9,14 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("Visas");
   const [toast, setToast] = useState(null);
+  const [lang, setLang] = useState("lv"); // ✅ valodas pārslēgšana tikai resursiem
 
   const [cases] = useState(casesData);
-  const [resources] = useState(resourcesData);
+  const [resources, setResources] = useState(resourcesLV);
+
+  useEffect(() => {
+    setResources(lang === "lv" ? resourcesLV : resourcesEN);
+  }, [lang]);
 
   const categories = useMemo(() => {
     const set = new Set(cases.map((c) => c.category).filter(Boolean));
@@ -47,7 +53,6 @@ export default function App() {
     setQuery("");
   }, [activeCategory]);
 
-  // 🧩 Case details modālais logs
   const CaseDetails = ({ c }) => {
     const [showForm, setShowForm] = useState(false);
     const [formData, setFormData] = useState({});
@@ -79,13 +84,10 @@ export default function App() {
 
     return (
       <div className="fixed inset-0 z-50 flex items-center justify-center">
-        {/* Background */}
         <div
           className="absolute inset-0 bg-black/50"
           onClick={() => setSelectedCase(null)}
         />
-
-        {/* Modal window */}
         <div className="relative bg-white w-full md:w-[700px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-lg p-6 animate-fadeIn">
           <button
             className="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-xl"
@@ -106,26 +108,27 @@ export default function App() {
             </p>
 
             <div className="flex flex-wrap gap-2">
-  <button
-    className="px-2 py-1 text-xs sm:text-sm bg-blue-600 text-white rounded-md sm:rounded-lg hover:bg-blue-700 transition"
-    onClick={() => copyWithToast(filledDescription)}
-  >
-    📋 Kopēt
-  </button>
+              <button
+                className="px-2 py-1 text-xs sm:text-sm bg-blue-600 text-white rounded-md sm:rounded-lg hover:bg-blue-700 transition"
+                onClick={() => copyWithToast(filledDescription)}
+              >
+                📋 Kopēt
+              </button>
 
-  <button
-    className="px-2 py-1 text-xs sm:text-sm bg-gray-600 text-white rounded-md sm:rounded-lg hover:bg-gray-700 transition"
-    onClick={() => setShowForm((s) => !s)}
-  >
-    ✏️ {showForm ? "Paslēpt" : "Rediģēt"}
-  </button>
-</div>
-
+              <button
+                className="px-2 py-1 text-xs sm:text-sm bg-gray-800 text-white rounded-md sm:rounded-lg hover:bg-gray-700 transition"
+                onClick={() => setShowForm((s) => !s)}
+              >
+                ✏️ {showForm ? "Paslēpt" : "Rediģēt"}
+              </button>
+            </div>
           </div>
 
           {showForm && (
             <div className="border-t pt-3 mt-4">
-              <h3 className="font-medium text-blue-700 mb-2">Aizpildīt veidni</h3>
+              <h3 className="font-medium text-blue-700 mb-2">
+                Aizpildīt veidni
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                 {fields.map((f) => (
                   <input
@@ -169,14 +172,13 @@ export default function App() {
     );
   };
 
-  // 🧩 Galvenā struktūra
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 flex flex-col">
       {/* Header */}
       <header className="backdrop-blur-md bg-white/90 border-b sticky top-0 z-50 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 sm:px-10 py-3 gap-2">
           <h1 className="text-xl font-bold text-blue-700 tracking-tight text-center sm:text-left">
-            Apas palīgs
+            Veidņu palīgs
           </h1>
 
           <div className="flex justify-center sm:justify-end gap-2">
@@ -204,11 +206,11 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main */}
+      {/* Main Content */}
       <main className="flex-1 w-full px-4 sm:px-10 py-6">
         {activeView === "cases" && (
           <>
-            {/* Meklēšana */}
+            {/* Search */}
             <div className="flex flex-col md:flex-row md:items-center gap-3 mb-6">
               <input
                 value={query}
@@ -229,7 +231,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* Kategorijas */}
+            {/* Categories */}
             <div className="flex flex-wrap gap-2 mb-8">
               {categories.map((cat) => (
                 <button
@@ -246,7 +248,7 @@ export default function App() {
               ))}
             </div>
 
-            {/* Notikumu kartiņas */}
+            {/* Cases Grid */}
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {filteredCases.map((c) => (
                 <div
@@ -275,12 +277,22 @@ export default function App() {
 
         {activeView === "resources" && (
           <section className="px-4 md:px-10">
-            <h2 className="text-2xl font-semibold text-blue-700 mb-4">
-              Resursi
-            </h2>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-2xl font-semibold text-blue-700">
+                {lang === "lv" ? "Resursi" : "Resources"}
+              </h2>
+              <button
+                onClick={() => setLang(lang === "lv" ? "en" : "lv")}
+                className="px-3 py-1.5 text-sm border rounded-full bg-white hover:bg-gray-100 text-gray-600"
+              >
+                {lang === "lv" ? "EN" : "LV"}
+              </button>
+            </div>
+
             <p className="text-sm text-gray-500 mb-8">
-              Šī sadaļa ir informatīva — tajā apkopoti tiesību panti, pienākumi
-              un atbildību mīkstinoši/pastiprinoši apstākļi.
+              {lang === "lv"
+                ? "Šī sadaļa ir informatīva — tajā apkopoti tiesību panti, pienākumi un atbildību mīkstinoši/pastiprinoši apstākļi."
+                : "This section contains reference materials — rights, obligations, and mitigating/aggravating circumstances."}
             </p>
 
             <div className="space-y-6">

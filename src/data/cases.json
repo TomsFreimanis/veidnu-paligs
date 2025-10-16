@@ -1,5 +1,28 @@
 [
-  
+  {
+    "id": 1,
+    "title": "Sabiedriskās kārtības traucēšana (atkailināšanās publiskā vietā)",
+    "category": "Sabiedriskā kārtība",
+    "description": "{datums}, plkst. {laiks}, {adrese}, {persona}, dzimis {dzimsanas_datums}, elektroniskā pasta adrese: {epasts}, ar savu uzvedību pārkāpa vispārpieņemtās uzvedības normas, traucēja sabiedrisko mieru un kārtību, novilka bikses un atkailināja dzimumorgānus. Tādejādi ar savu rīcību pārkāpis Administratīvo sodu likuma par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā 11. panta pirmās daļas minētās prasības.\n\nPārkāpums fiksēts ar kameru {kamera_vieta}. Izmantotas Axis kameras Nr. {kamera_nr}.",
+    "articles": [
+      {
+        "id": 1,
+        "text": "Administratīvās atbildības likums, 153.1.1. Lēmumā par soda piemērošanu norāda: administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+      },
+      {
+        "id": 2,
+        "text": "Administratīvās atbildības likums, 116.2. Administratīvā pārkāpuma procesu uzsāk: uz amatpersonas iniciatīvas pamata."
+      },
+      {
+        "id": 3,
+        "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 11.1. Par sabiedriskās kārtības traucēšanu, pārkāpjot vispārpieņemtās uzvedības normas un traucējot personas mieru, iestādes, komersanta vai citas institūcijas darbu vai apdraudot savu vai citu personu drošību, piemēro brīdinājumu vai naudas sodu fiziskajai personai līdz simt naudas soda vienībām, bet juridiskajai personai — līdz tūkstoš naudas soda vienībām."
+      },
+      {
+        "id": 4,
+        "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 30.1. Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
+      }
+    ]
+  },
   {
     "id": 2,
     "title": "Iebrauca zem 301. ceļa zīmes",
@@ -32,7 +55,7 @@
     "id": 3,
     "title": "Nepakļaušanās amatpersonas rīkojumam",
     "category": "Sabiedriskā kārtība",
-    "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}, deklarētā dzīvesvieta {dzīvesvieta}), nepildīja amatpersonas (pašvaldības policijas darbinieka) likumīgās prasības, proti — pēc urinēšanas neatļautā vietā, skŗeja prom no notikuma vietas un nepildīja pašvaldības policijas darbinieku vairākkārtēju rīkojumu palikt uz vietas.\n\nNotikums fiksēts ar AXIS Nr. {axis_nr} un kameru {kamera}.",
+    "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}, deklarētā dzīvesvieta {dzīvesvieta}), nepildīja amatpersonas (pašvaldības policijas darbinieka) likumīgās prasības, proti — pēc urinēšanas neatļautā vietā, skrēja prom no notikuma vietas un nepildīja pašvaldības policijas darbinieku vairākkārtēju rīkojumu palikt uz vietas.\n\nNotikums fiksēts ar AXIS Nr. {axis_nr} un kameru {kamera}.",
     "articles": [
       {
         "id": 1,
@@ -60,7 +83,7 @@
     "articles": [
       {
         "id": 1,
-        "text": "Rīgas domes saistošie noteikumi Nr. 47, 3. punkts — par alkoholisko dzērienu lietošanu publiskā vietā, kas nav paredzēta šim nolūkam."
+        "text": "Rīgas domes saistošie noteikumi Nr. 47, 3. punkts — par alkoholisko dzērienu lietošanu publiskā vietā, kas nav paredzēta šim nolūkumam."
       },
       {
         "id": 2,
@@ -69,28 +92,6 @@
     ]
   },
   {
-  "id": 1,
-  "title": "Sabiedriskās kārtības traucēšana (atkailināšanās publiskā vietā)",
-  "category": "Sabiedriskā kārtība",
-  "description": "{datums}, plkst. {laiks}, {adrese}, {persona}, dzimis {dzimsanas_datums}, elektroniskā pasta adrese: {epasts}, ar savu uzvedību pārkāpa vispārpieņemtās uzvedības normas, traucēja sabiedrisko mieru un kārtību, novilka bikses un atkailināja dzimumorgānus. Tādejādi ar savu rīcību pārkāpis Administratīvo sodu likuma par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā 11. panta pirmās daļas minētās prasības.\n\nPārkāpums fiksēts ar kameru {kamera_vieta}. Izmantotas Axis kameras Nr. {kamera_nr}.",
-  "articles": [
-    {
-      "id": 1,
-      "text": "Administratīvās atbildības likums, 153.1.1. Lēmumā par soda piemērošanu norāda: administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
-    },
-    {
-      "id": 2,
-      "text": "Administratīvās atbildības likums, 116.2. Administratīvā pārkāpuma procesu uzsāk: uz amatpersonas iniciatīvas pamata."
-    },
-    {
-      "id": 3,
-      "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 11.1. Par sabiedriskās kārtības traucēšanu, pārkāpjot vispārpieņemtās uzvedības normas un traucējot personas mieru, iestādes, komersanta vai citas institūcijas darbu vai apdraudot savu vai citu personu drošību, piemēro brīdinājumu vai naudas sodu fiziskajai personai līdz simt naudas soda vienībām, bet juridiskajai personai — līdz tūkstoš naudas soda vienībām."
-    },
-    {
-      "id": 4,
-      "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 30.1. Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
-    },
-    {
     "id": 5,
     "title": "Elektroskrējriteni divatā",
     "category": "CSN",
@@ -110,8 +111,4 @@
       }
     ]
   }
-  ]
-}
-
-
 ]
