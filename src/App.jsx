@@ -127,57 +127,60 @@ export default function App() {
 return (
   <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 flex flex-col">
     {/* Header */}
-    <header className="backdrop-blur-md bg-white/70 border-b sticky top-0 z-50 shadow-sm">
-      <div className="flex items-center justify-between px-10 py-3 w-full">
-        <h1 className="text-xl font-bold text-blue-700 tracking-tight">
-          Veidņu palīgs
-        </h1>
-        <div className="flex gap-2">
-          <button
-            onClick={() => setActiveView("cases")}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
-              activeView === "cases"
-                ? "bg-blue-600 text-white shadow-sm"
-                : "bg-white/60 text-gray-700 hover:bg-blue-50"
-            }`}
-          >
-            Notikumi
-          </button>
-          <button
-            onClick={() => setActiveView("resources")}
-            className={`px-4 py-2 rounded-lg text-sm font-medium transition ${
-              activeView === "resources"
-                ? "bg-gray-200 text-gray-700 shadow-sm"
-                : "bg-white/60 text-gray-500 hover:bg-gray-100"
-            }`}
-          >
-            Resursi
-          </button>
-        </div>
-      </div>
-    </header>
+    <header className="backdrop-blur-md bg-white/80 border-b sticky top-0 z-50 shadow-sm">
+  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 sm:px-8 py-3 gap-2 sm:gap-0">
+    <h1 className="text-xl font-bold text-blue-700 tracking-tight text-center sm:text-left">
+      Veidņu palīgs
+    </h1>
+
+    <div className="flex justify-center sm:justify-end gap-2">
+      <button
+        onClick={() => setActiveView("cases")}
+        className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+          activeView === "cases"
+            ? "bg-blue-600 text-white shadow-md"
+            : "bg-white text-gray-700 border hover:bg-blue-50"
+        }`}
+      >
+        Notikumi
+      </button>
+      <button
+        onClick={() => setActiveView("resources")}
+        className={`px-5 py-2 rounded-full text-sm font-medium transition ${
+          activeView === "resources"
+            ? "bg-gray-200 text-gray-700 shadow-md"
+            : "bg-white text-gray-500 border hover:bg-gray-100"
+        }`}
+      >
+        Resursi
+      </button>
+    </div>
+  </div>
+</header>
+
 
     {/* Main */}
-    <main className="flex-1 w-full px-10 py-8">
-      {activeView === "cases" && (
-        <>
-          <div className="flex flex-col md:flex-row md:items-center gap-3 mb-8">
-            <input
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Meklēt nosaukumā, aprakstā vai pantos..."
-              className="w-full md:w-2/3 border border-gray-300 rounded-lg px-3 py-2 text-sm shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
-            />
-            <button
-              onClick={() => setQuery("")}
-              className="px-3 py-2 border rounded-lg hover:bg-gray-50 text-sm"
-            >
-              Notīrīt
-            </button>
-            <div className="ml-auto text-sm text-gray-500">
-              Atrasti: {filteredCases.length}
-            </div>
-          </div>
+    <main className="flex-1 w-full px-4 sm:px-10 py-6">
+  {activeView === "cases" && (
+    <>
+      {/* Meklēšana un info */}
+      <div className="flex flex-col md:flex-row md:items-center gap-3 mb-6">
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Meklēt nosaukumā, aprakstā vai pantos..."
+          className="w-full border border-gray-300 rounded-full px-4 py-3 text-sm shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white"
+        />
+        <div className="flex items-center justify-between md:justify-start gap-3">
+          <button
+            onClick={() => setQuery("")}
+            className="px-4 py-2 text-sm rounded-full bg-gray-100 hover:bg-gray-200 border text-gray-600"
+          >
+            Notīrīt
+          </button>
+          <span className="text-sm text-gray-500">Atrasti: {filteredCases.length}</span>
+        </div>
+      </div>
 
           <div className="flex flex-wrap gap-2 mb-8">
             {categories.map((cat) => (
