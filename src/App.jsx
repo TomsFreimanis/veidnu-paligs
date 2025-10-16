@@ -122,12 +122,13 @@ export default function App() {
           <div className="mb-4">
             <h3 className="font-medium mb-1">Apraksts</h3>
             <p className="text-gray-700 mb-2 whitespace-pre-line">{c.description}</p>
-            <button
-              className="px-3 py-1 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 mr-2"
-              onClick={() => copyWithToast(c.description || "")}
-            >
-              📋 Kopēt aprakstu
-            </button>
+           <button
+  className="px-4 py-2 text-sm font-medium bg-blue-600 text-white rounded-xl hover:bg-blue-700 active:bg-blue-800 shadow-md w-full md:w-auto transition"
+  onClick={() => copyWithToast(c.description)}
+>
+  📋 Kopēt aprakstu
+</button>
+
             <button
               className="px-3 py-1 text-sm border rounded-lg hover:bg-gray-50"
               onClick={() => setShowFill((s) => !s)}
