@@ -6,14 +6,20 @@
     "items": [
       {
         "id": "rights_and_obligations",
-        "title": "Pie atbildības saucamās personas tiesības un pienākumi",
+        "title":"41. pants. Pie atbildības saucamās personas tiesības un pienākumi",
         "text": "41. pants. Pie atbildības saucamās personas tiesības un pienākumi\n\n(1) Pie atbildības saucamajai personai ir šādas tiesības:\n\n1) iepazīties ar administratīvā pārkāpuma lietas materiāliem;\n2) piedalīties administratīvā pārkāpuma lietas izskatīšanā;\n3) sniegt paskaidrojumus;\n4) lietot valodu, kurā tā spēj sazināties, un izmantot tulka palīdzību;\n5) zināt, par kāda pārkāpuma izdarīšanu tā tiek saukta pie atbildības;\n6) iesniegt pierādījumus;\n7) pārsūdzēt pieņemto lēmumu;\n8) īstenot aizstāvību ar aizstāvja palīdzību;\n9) atsaukt aizstāvja iesniegtu sūdzību vai lūgumu.\n\n(2) Pie atbildības saucamajai personai ir šādi pienākumi:\n\n1) ierasties noteiktajā laikā;\n2) netraucēt procesa norisi;\n3) paziņot par adreses maiņu;\n4) pārtraukt pārkāpumu;\n5) ievērot piemēroto procesuālo piespiedu līdzekli."
       },
       {
         "id": "detention_rights",
-        "title": "Aizturētās personas tiesības un aizturēšanas kārtība",
+        "title": "71. pants. Administratīvā aizturēšana - Aizturētās personas tiesības un aizturēšanas kārtība",
         "text": "(4) Aizturētajai personai ir tiesības:\n\n1) uzaicināt aizstāvi;\n2) pieprasīt, lai par aizturēšanu paziņo tās tuviniekam, mācību iestādei vai darba devējam. Par nepilngadīgas personas aizturēšanu obligāti paziņo tās pārstāvim;\n3) iepazīties ar aizturēšanas protokolu un saņemt informāciju par aizturētā tiesībām un pienākumiem;\n4) izteikt savu viedokli par aizturēšanas pamatotību.\n\n(5) Aizturēto personu drīkst aizturēt ne ilgāk kā uz četrām stundām. Personas aizturēšanas laiku skaita no faktiskās aizturēšanas brīža. Personai, kas atradusies alkoholisko dzērienu vai citu apreibinošu vielu ietekmē, administratīvās aizturēšanas laiku skaita no brīža, kad persona spēj adekvāti uztvert notiekošo.\n\n(6) Aizturēšanas protokolu paziņo personai, uz kuru tas attiecas."
-      }
+      },
+{
+  "id": "victim_rights",
+  "title": "44. pants. Cietušā tiesības un pienākumi",
+  "text": "(1) Cietušajam ir šādas tiesības:\n\n1) iepazīties ar administratīvā pārkāpuma lietas materiāliem, izdarīt no tiem izrakstus, norakstus un izgatavot kopijas;\n2) piedalīties administratīvā pārkāpuma lietas izskatīšanā;\n3) lietot valodu, kurā viņš spēj sazināties, kā arī bez atlīdzības izmantot tulka palīdzību šajā likumā noteiktajā kārtībā, ja cietušais neprot valodu, kurā notiek administratīvā pārkāpuma process;\n4) neliecināt pret sevi un savu saderināto, laulāto, vecākiem, vecvecākiem, bērniem, mazbērniem, brāļiem un māsām, kā arī pret to personu, ar kuru attiecīgā fiziskā persona dzīvo kopā un ar kuru tai ir kopīga (nedalīta) saimniecība;\n5) izteikt lūgumus;\n6) iesniegt pierādījumus;\n7) pārsūdzēt administratīvā pārkāpuma lietā pieņemto lēmumu.\n\n(2) Cietušais savas tiesības īsteno brīvprātīgi un paša izraudzītajā apjomā. Tiesību neizmantošana nekavē administratīvā pārkāpuma procesa norisi.\n\n(3) Cietušajam ir šādi pienākumi:\n\n1) savu iespēju robežās darīt visu, lai novērstu vai samazinātu viņam radītā kaitējuma apmēru;\n2) noteiktajā laikā ierasties amatpersonas, augstākas amatpersonas vai tiesas norādītajā vietā;\n3) sniegt tikai patiesas ziņas un liecināt par visu, kas viņam zināms saistībā ar konkrēto administratīvo pārkāpumu;\n4) nekavēt un netraucēt administratīvā pārkāpuma procesa norisi;\n5) paziņot amatpersonai, augstākai amatpersonai vai tiesai par dzīvesvietas, juridiskās adreses vai elektroniskā pasta adreses maiņu procesa laikā;\n6) ievērot noteikto kārtību procesuālo darbību veikšanas laikā."
+}
+
     ]
   },
   {

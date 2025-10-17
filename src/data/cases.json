@@ -161,27 +161,42 @@
     ]
   }, {
   "id": 7,
-  "title": "Brīvības pieminekļa apgānīšana vai necieņas izrādīšana",
+  "title": "Klaja necieņas izrādīšana pret Brīvības pieminekli",
   "category": "Sabiedriskā kārtība",
-  "description": "{datums}, plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}), deklarētā dzīvesvieta {dzivesvieta}, uzkāpa uz Brīvības pieminekļa postamenta, tādējādi izrādot klaju necieņu Latvijas valsts simbolam — Brīvības piemineklim. \n\nPārkāpums fiksēts ar videonovērošanas iekārtu Nr. {kamera_nr}. Dokumentu paziņošana uz deklarēto dzīvesvietu.",
+  "description": "{datums} plkst. {laiks}, {adrese}, {pilsonis} (dzimšanas datums {dzimsanas_datums}), deklarētā dzīvesvieta {dzivesvieta}, e-pasta adrese {epasts}, telefona numurs {telefons}, no skatu laukuma puses pie metāla ieejas durvīm uzrāpās uz Brīvības pieminekļa masīva pamatnes, tādā veidā izrādot klaju necieņu pret Brīvības pieminekli. Ar savu rīcību persona pārkāpa \"Brīvības pieminekļa un Rīgas Brāļu kapu likuma\" 9. pantā minētās prasības. \n\nPārkāpumu pierāda: video fiksācija ar video iekārtu {kamera_tips} Nr. {kamera_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera_vieta}. {prat_protokol_nr}.",
   "articles": [
     {
       "id": 1,
-      "text": "Administratīvās atbildības likums 153.1.1. — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums – 9. pants. Par klajas necieņas izrādīšanu pret Brīvības pieminekli vai Rīgas Brāļu kapiem piemēro naudas sodu fiziskajai personai no divsimt līdz četrsimt naudas soda vienībām (no 1000 līdz 2000 euro)."
     },
     {
       "id": 2,
-      "text": "Administratīvās atbildības likums 116.2. — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums – 11. pants. Administratīvā pārkāpuma procesu par šā likuma 9. un 10. pantā minētajiem pārkāpumiem veic Valsts policija un pašvaldības policija."
     },
     {
       "id": 3,
-      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums 9. pants. — Par klaju necieņu pret Brīvības pieminekli vai Rīgas Brāļu kapiem piemēro naudas sodu fiziskajai personai no divsimt līdz četrsimt naudas soda vienībām."
+      "text": "Administratīvās atbildības likums 153.1.1. — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
     },
     {
       "id": 4,
-      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums 11. pants. — Administratīvā pārkāpuma procesu par šā likuma 9. pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
+      "text": "Administratīvās atbildības likums 116.2. — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
     }
+  ],
+  "fields": [
+    "datums",
+    "laiks",
+    "adrese",
+    "pilsonis",
+    "dzimsanas_datums",
+    "dzivesvieta",
+    "epasts",
+    "telefons",
+    "kamera_tips",
+    "kamera_nr",
+    "kamera_vieta",
+    "prat_protokol_nr"
   ]
 }
+
 
 ]
