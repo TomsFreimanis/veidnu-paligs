@@ -51,120 +51,144 @@ export default function App() {
 
   // 🧱 Case detaļas logs — automātiski ģenerē laukus no {mainīgajiem}
   const CaseDetails = ({ c }) => {
-    const [showForm, setShowForm] = useState(false);
-    const [formData, setFormData] = useState({});
+  const [showForm, setShowForm] = useState(false);
+  const [formData, setFormData] = useState({});
 
-    // 🔍 Automātiski atrod visus mainīgos no apraksta
-    const fields = useMemo(() => {
-      const matches = Array.from(c.description.matchAll(/\{(.*?)\}/g)).map(
-        (m) => m[1]
-      );
-      return [...new Set(matches)];
-    }, [c.description]);
+  // Cilvēcīgi lauku nosaukumi un piemēri
+  const fieldHints = {
+    datums: { label: "Datums", example: "10.05.2025" },
+    laiks: { label: "Laiks", example: "21:50" },
+    adrese: { label: "Notikuma vieta", example: "Rīga, Brīvības laukums 1" },
+    pilsonis: { label: "Persona", example: "Jānis Bērziņš" },
+    personas_kods: { label: "Personas kods", example: "010190-12345" },
+    dzīvesvieta: { label: "Deklarētā dzīvesvieta", example: "Ropazu 33, Rīga" },
+    epasts: { label: "E-pasta adrese", example: "janis.berzins@example.com" },
+    dzēriens: { label: "Dzēriens", example: "Alus skārdene 'Lager Cronus'" },
+    tilpums: { label: "Tilpums", example: "0.5L" },
+    axis_nr: { label: "Kameras numurs", example: "Axis Nr.ITC210725." },
+    modelis: { label: "Transportlīdzekļa modelis", example: "BMW X5" },
+    reg_nr: { label: "Reģistrācijas numurs", example: "AB1234" },
+    marsruts: { label: "Maršruts", example: "No Brīvības ielas uz Valdemāra ielu" },
+    pasažieris: { label: "Pasažieris", example: "Anna Ozola" },
+    kamera_vieta: { label: "Kameras vieta", example: "Rātslaukums" },
+    kamera: { label: "Kameras numurs", example: "Z.A Merierovica PTZ." },
+  };
 
-    // 🔄 Saglabā ievadītās vērtības
-    const handleChange = (key, value) => {
-      setFormData((prev) => ({ ...prev, [key]: value }));
-    };
+  // Automātiski atrod visus mainīgos no apraksta
+  const fields = useMemo(() => {
+    const matches = Array.from(c.description.matchAll(/\{(.*?)\}/g)).map(m => m[1]);
+    return [...new Set(matches)];
+  }, [c.description]);
 
-    // 🧩 Aizvieto tekstā ievadītās vērtības
-    const filledDescription = useMemo(() => {
-      let text = c.description;
-      for (const key in formData) {
-        text = text.replaceAll(`{${key}}`, formData[key] || `{${key}}`);
-      }
-      return text;
-    }, [formData, c.description]);
+  // Saglabā ievadītās vērtības
+  const handleChange = (key, value) => {
+    setFormData(prev => ({ ...prev, [key]: value }));
+  };
 
-    return (
-      <div className="fixed inset-0 z-50 flex items-center justify-center">
-        <div
-          className="absolute inset-0 bg-black/50"
+  // Aizvieto tekstā ievadītās vērtības
+  const filledDescription = useMemo(() => {
+    let text = c.description;
+    for (const key in formData) {
+      text = text.replaceAll(`{${key}}`, formData[key] || `{${key}}`);
+    }
+    return text;
+  }, [formData, c.description]);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center">
+      <div
+        className="absolute inset-0 bg-black/50"
+        onClick={() => setSelectedCase(null)}
+      />
+      <div className="relative bg-white w-full md:w-[700px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-lg p-6 animate-fadeIn">
+        <button
+          className="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-xl"
           onClick={() => setSelectedCase(null)}
-        />
-        <div className="relative bg-white w-full md:w-[700px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-lg p-6 animate-fadeIn">
-          <button
-            className="absolute top-3 right-4 text-gray-500 hover:text-gray-800 text-xl"
-            onClick={() => setSelectedCase(null)}
-          >
-            ✕
-          </button>
+        >
+          ✕
+        </button>
 
-          <h2 className="text-xl font-bold text-blue-700 mb-2">{c.title}</h2>
-          {c.category && (
-            <div className="text-xs text-gray-500 mb-3">{c.category}</div>
-          )}
+        <h2 className="text-xl font-bold text-blue-700 mb-2">{c.title}</h2>
+        {c.category && (
+          <div className="text-xs text-gray-500 mb-3">{c.category}</div>
+        )}
 
-          <div className="mb-4">
-            <h3 className="font-medium mb-1">Apraksts:</h3>
-            <p className="text-gray-700 whitespace-pre-line mb-2 text-sm">
-              {filledDescription}
-            </p>
+        <div className="mb-4">
+          <h3 className="font-medium mb-1">Apraksts:</h3>
+          <p className="text-gray-700 whitespace-pre-line mb-2 text-sm">
+            {filledDescription}
+          </p>
 
-            <div className="flex flex-wrap gap-2">
-              <button
-                className="px-2 py-1 text-xs bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-                onClick={() => copyWithToast(filledDescription)}
-              >
-                📋 Kopēt
-              </button>
+          <div className="flex flex-wrap gap-2">
+            <button
+              className="px-2 py-1 text-xs bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
+              onClick={() => copyWithToast(filledDescription)}
+            >
+              📋 Kopēt
+            </button>
 
-              <button
-                className="px-2 py-1 text-xs bg-gray-800 text-white rounded-md hover:bg-gray-700 transition"
-                onClick={() => setShowForm((s) => !s)}
-              >
-                ✏️ {showForm ? "Paslēpt" : "Aizpildīt"}
-              </button>
-            </div>
-          </div>
-
-          {/* 🧾 Dinamiski ģenerētie lauki */}
-          {showForm && (
-            <div className="border-t pt-3 mt-4">
-              <h3 className="font-medium text-blue-700 mb-2">Aizpildīt veidni</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {fields.map((f) => (
-                  <input
-                    key={f}
-                    type="text"
-                    value={formData[f] || ""}
-                    onChange={(e) => handleChange(f, e.target.value)}
-                    placeholder={f}
-                    className="border rounded-lg px-3 py-1.5 text-sm bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none"
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Panti */}
-          <div className="mt-6">
-            <h3 className="font-medium mb-2">Panti:</h3>
-            {Array.isArray(c.articles) && c.articles.length > 0 ? (
-              c.articles.map((a) => (
-                <div
-                  key={a.id ?? a.text}
-                  className="flex justify-between items-start sm:items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
-                >
-                  <span className="text-sm leading-snug pr-2">{a.text}</span>
-                  <button
-                    className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 transition"
-                    onClick={() => copyWithToast(a.text || "")}
-                  >
-                    📋 Kopēt
-                  </button>
-                </div>
-              ))
-            ) : (
-              <div className="text-sm text-gray-500">
-                Pantu saraksts nav pievienots.
-              </div>
-            )}
+            <button
+              className="px-2 py-1 text-xs bg-gray-800 text-white rounded-md hover:bg-gray-700 transition"
+              onClick={() => setShowForm((s) => !s)}
+            >
+              ✏️ {showForm ? "Paslēpt" : "Aizpildīt"}
+            </button>
           </div>
         </div>
+
+        {/* 🧾 Skaidrāka veidnes aizpildīšana */}
+        {showForm && (
+          <div className="border-t pt-3 mt-4">
+            <h3 className="font-medium text-blue-700 mb-3">Aizpildīt veidni</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {fields.map((f) => {
+                const hint = fieldHints[f];
+                return (
+                  <div key={f} className="flex flex-col">
+                    <label className="text-xs text-gray-600 mb-1">
+                      {hint?.label || f}
+                    </label>
+                    <input
+                      type="text"
+                      value={formData[f] || ""}
+                      onChange={(e) => handleChange(f, e.target.value)}
+                      placeholder={hint?.example || f}
+                      className="border rounded-lg px-3 py-1.5 text-sm bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none"
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Panti */}
+        <div className="mt-6">
+          <h3 className="font-medium mb-2">Panti:</h3>
+          {Array.isArray(c.articles) && c.articles.length > 0 ? (
+            c.articles.map((a) => (
+              <div
+                key={a.id ?? a.text}
+                className="flex justify-between items-start sm:items-center bg-gray-50 border rounded-lg px-3 py-2 mb-2"
+              >
+                <span className="text-sm leading-snug pr-2">{a.text}</span>
+                <button
+                  className="shrink-0 px-2 py-1 text-xs font-medium bg-blue-600 text-white rounded-md hover:bg-blue-700 active:bg-blue-800 transition"
+                  onClick={() => copyWithToast(a.text || "")}
+                >
+                  📋 Kopēt
+                </button>
+              </div>
+            ))
+          ) : (
+            <div className="text-sm text-gray-500">Pantu saraksts nav pievienots.</div>
+          )}
+        </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
+
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-gray-200 text-gray-900 flex flex-col transition-all duration-300">
