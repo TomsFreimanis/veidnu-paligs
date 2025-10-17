@@ -76,21 +76,30 @@
     ]
   },
   {
-    "id": 4,
-    "title": "Alkohola lietošana sabiedriskā vietā",
-    "category": "Sabiedriskā kārtība",
-    "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}) lietoja alkoholiskos dzērienus publiskā vietā, kas nav paredzēta šim nolūkam. Personai paskaidrots pārkāpums un piemērojamā atbildība.",
-    "articles": [
-      {
-        "id": 1,
-        "text": "Rīgas domes saistošie noteikumi Nr. 47, 3. punkts — par alkoholisko dzērienu lietošanu publiskā vietā, kas nav paredzēta šim nolūkumam."
-      },
-      {
-        "id": 2,
-        "text": "Administratīvās atbildības likums 171. pants — par alkoholisko dzērienu lietošanu neatļautā vietā piemēro brīdinājumu vai naudas sodu."
-      }
-    ]
-  },
+  "id": 6,
+  "title": "Alkoholisko dzērienu lietošana publiskā vietā",
+  "category": "Sabiedriskā kārtība",
+  "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}), deklarētā dzīvesvieta {dzivesvieta}, lietoja alkoholisku dzērienu \"{dzēriens}\" ({tilpums}%, {izmers}), publiskā vietā, kur tas nav atļauts. Dokumentu paziņošana uz deklarēto dzīvesvietu.\n\nPārkāpums fiksēts ar audio/video ieraksta iekārtu Axis Nr. {axis_nr}.",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 153.1.1. — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 116.2. — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 3,
+      "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 10. pants — Par alkoholisko dzērienu vai citu apreibinošo vielu lietošanu publiskā vietā, izņemot vietas, kur alkoholisko dzērienu mazumtirdzniecību patērēšanai uz vietas atļāvusi pašvaldība vai Valsts ieņēmumu dienests, vai par atrašanos publiskā vietā tādā reibuma stāvoklī, kas traucē sabiedrisko kārtību vai drošību, piemēro brīdinājumu vai naudas sodu līdz 70 naudas soda vienībām."
+    },
+    {
+      "id": 4,
+      "text": "Administratīvo sodu likums 30.1. — Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
+    }
+  ]
+}
+,
   {
     "id": 5,
     "title": "Elektroskrējriteni divatā",

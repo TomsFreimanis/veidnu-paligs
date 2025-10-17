@@ -9,7 +9,7 @@ export default function App() {
   const [query, setQuery] = useState("");
   const [activeCategory, setActiveCategory] = useState("Visas");
   const [toast, setToast] = useState(null);
-  const [lang, setLang] = useState("lv"); // 🌐 tikai resursiem
+  const [lang, setLang] = useState("lv"); // tikai resursiem
 
   const [cases] = useState(casesData);
   const [resources, setResources] = useState(resourcesLV);
@@ -49,28 +49,25 @@ export default function App() {
     }
   };
 
-  // 🧱 Case detaļas logs
+  // 🧱 Case detaļas logs — automātiski ģenerē laukus no {mainīgajiem}
   const CaseDetails = ({ c }) => {
     const [showForm, setShowForm] = useState(false);
     const [formData, setFormData] = useState({});
 
-    const fields = [
-      "datums",
-      "laiks",
-      "adrese",
-      "pilsonis",
-      "personas_kods",
-      "epasts",
-      "modelis",
-      "reg_nr",
-      "marsruts",
-      "pasazieris",
-    ];
+    // 🔍 Automātiski atrod visus mainīgos no apraksta
+    const fields = useMemo(() => {
+      const matches = Array.from(c.description.matchAll(/\{(.*?)\}/g)).map(
+        (m) => m[1]
+      );
+      return [...new Set(matches)];
+    }, [c.description]);
 
+    // 🔄 Saglabā ievadītās vērtības
     const handleChange = (key, value) => {
-      setFormData({ ...formData, [key]: value });
+      setFormData((prev) => ({ ...prev, [key]: value }));
     };
 
+    // 🧩 Aizvieto tekstā ievadītās vērtības
     const filledDescription = useMemo(() => {
       let text = c.description;
       for (const key in formData) {
@@ -116,11 +113,12 @@ export default function App() {
                 className="px-2 py-1 text-xs bg-gray-800 text-white rounded-md hover:bg-gray-700 transition"
                 onClick={() => setShowForm((s) => !s)}
               >
-                ✏️ {showForm ? "Paslēpt" : "Rediģēt"}
+                ✏️ {showForm ? "Paslēpt" : "Aizpildīt"}
               </button>
             </div>
           </div>
 
+          {/* 🧾 Dinamiski ģenerētie lauki */}
           {showForm && (
             <div className="border-t pt-3 mt-4">
               <h3 className="font-medium text-blue-700 mb-2">Aizpildīt veidni</h3>
@@ -139,6 +137,7 @@ export default function App() {
             </div>
           )}
 
+          {/* Panti */}
           <div className="mt-6">
             <h3 className="font-medium mb-2">Panti:</h3>
             {Array.isArray(c.articles) && c.articles.length > 0 ? (
@@ -157,7 +156,9 @@ export default function App() {
                 </div>
               ))
             ) : (
-              <div className="text-sm text-gray-500">Pantu saraksts nav pievienots.</div>
+              <div className="text-sm text-gray-500">
+                Pantu saraksts nav pievienots.
+              </div>
             )}
           </div>
         </div>
@@ -235,7 +236,9 @@ export default function App() {
                 >
                   Notīrīt
                 </button>
-                <span className="text-sm text-gray-500">Atrasti: {filteredCases.length}</span>
+                <span className="text-sm text-gray-500">
+                  Atrasti: {filteredCases.length}
+                </span>
               </div>
             </div>
 
@@ -265,11 +268,17 @@ export default function App() {
                   className="bg-white/90 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition p-5 cursor-pointer flex flex-col justify-between"
                 >
                   <div>
-                    <h3 className="text-base font-semibold text-blue-700 mb-2">{c.title}</h3>
-                    <p className="text-sm text-gray-600 line-clamp-3">{c.description}</p>
+                    <h3 className="text-base font-semibold text-blue-700 mb-2">
+                      {c.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 line-clamp-3">
+                      {c.description}
+                    </p>
                   </div>
                   {c.category && (
-                    <div className="text-xs text-gray-500 mt-3 italic">{c.category}</div>
+                    <div className="text-xs text-gray-500 mt-3 italic">
+                      {c.category}
+                    </div>
                   )}
                 </div>
               ))}
@@ -285,7 +294,9 @@ export default function App() {
                 key={group.id}
                 className="bg-white/80 border border-gray-200 rounded-2xl shadow-sm hover:shadow transition-all p-5"
               >
-                <h3 className="text-lg font-bold text-blue-700 mb-3">{group.title}</h3>
+                <h3 className="text-lg font-bold text-blue-700 mb-3">
+                  {group.title}
+                </h3>
                 {group.items.map((item) => (
                   <details
                     key={item.id}
@@ -305,6 +316,7 @@ export default function App() {
         )}
       </main>
 
+      {/* Toast ziņojums */}
       {toast && (
         <div className="fixed bottom-5 left-1/2 -translate-x-1/2 bg-black/80 text-white px-4 py-2 rounded-lg text-sm z-[60] animate-fadeIn">
           {toast}
