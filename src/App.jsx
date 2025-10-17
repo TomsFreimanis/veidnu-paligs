@@ -11,7 +11,15 @@ export default function App() {
   const [toast, setToast] = useState(null);
   const [lang, setLang] = useState("lv"); // tikai resursiem
 
-  const [cases] = useState(casesData);
+ const [cases, setCases] = useState([]);
+useEffect(() => {
+  // nodrošina, ka masīvs ir unikāls un bez dublikātiem
+  const uniqueCases = Array.from(
+    new Map(casesData.map((c) => [c.id, c])).values()
+  );
+  setCases(uniqueCases);
+}, []);
+
   const [resources, setResources] = useState(resourcesLV);
 
   useEffect(() => {

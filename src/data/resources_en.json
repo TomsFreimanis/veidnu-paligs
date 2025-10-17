@@ -54,7 +54,26 @@
         "id": "section11",
         "title": "Section 11. Administrative Procedure",
         "text": "Administrative offence proceedings for offences referred to in Sections 9 and 10 of this Law shall be conducted by the State Police and municipal police."
-      }
+      }, {
+  "id": 99,
+  "title": "Administrative Liability Law – Section 154. General Provisions Regarding Conditional Partial Release from Payment of a Fine",
+  "text": "(1) In order to promote cooperation between officials and the person held liable and to encourage voluntary payment of the fine, the official, when examining an administrative offence case, has the right to decide on the conditional partial release of a person from the payment of the fine.\n\n(2) A person may be conditionally partially released from payment of the fine if the following preconditions are met:\n\n1) the person held liable for the administrative offence has admitted guilt and agrees to the decision on the imposition of the fine;\n2) there are no aggravating circumstances that increase the person’s liability for the offence;\n3) there is no injured party in the administrative offence case;\n4) the person has not been conditionally partially released from the payment of a fine within the past year;\n5) the administrative offence case is not examined in the absence of the person held liable.\n\n(3) Conditional partial release from payment of the fine shall not be applied if, after assessing the circumstances of the offence, its nature, the offender’s personality, and other relevant factors, the official considers that such release would be inconsistent with the objective of ensuring a fair penalty.\n\n(4) When applying conditional partial release from payment of the fine, the official informs the person that they must pay 50 percent of the imposed fine within 15 days. If the person fulfills this condition, they are released from paying the remaining part of the fine. If the condition is not met, the full fine must be paid.\n\n(5) The decision on conditional partial release from payment of the fine becomes void if the person appeals against the decision imposing the fine."
+}
+
+
     ]
-  }
+  } ,
+{
+  "id": "conditional_release",
+  "title": "Conditional Partial Release from Fine Payment",
+  "section": "Administrative Law",
+  "items": [
+    {
+      "id": "section154",
+      "title": "Section 154. General Provisions Regarding Conditional Partial Release from Payment of a Fine",
+      "text": "(1) In order to promote cooperation between officials and persons held liable and to encourage voluntary payment of fines, the official, when examining an administrative offence case, has the right to decide on conditional partial release of a person from payment of the fine.\n\n(2) A person may be conditionally partially released from payment of the fine under the following preconditions:\n\n1) the person held liable for the administrative offence has admitted guilt and agrees to the decision on the imposition of the fine;\n2) there are no aggravating circumstances that increase the person’s liability for the offence;\n3) there is no injured party in the administrative offence case;\n4) the person has not been conditionally partially released from payment of a fine within the past year;\n5) the administrative offence case is not examined in the absence of the person held liable.\n\n(3) Conditional partial release from payment of the fine shall not be applied if, after assessing the circumstances of the offence, its nature, the offender’s personality, and other relevant factors, the official considers that such release would be inconsistent with the objective of ensuring a fair penalty.\n\n(4) When applying conditional partial release from payment of the fine, the official informs the person that they must pay 50 percent of the imposed fine within 15 days. If the person fulfills this condition, they are released from paying the remaining part of the fine. If the condition is not met, the full fine must be paid.\n\n(5) The decision on conditional partial release from payment of the fine becomes void if the person appeals against the decision imposing the fine."
+    }
+  ]
+}
+
 ]

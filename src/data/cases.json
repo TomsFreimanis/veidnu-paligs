@@ -76,7 +76,7 @@
     ]
   },
   {
-  "id": 6,
+  "id": 4,
   "title": "Alkoholisko dzērienu lietošana publiskā vietā",
   "category": "Sabiedriskā kārtība",
   "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}), deklarētā dzīvesvieta {dzivesvieta}, lietoja alkoholisku dzērienu \"{dzēriens}\" ({tilpums}%, {izmers}), publiskā vietā, kur tas nav atļauts. Dokumentu paziņošana uz deklarēto dzīvesvietu.\n\nPārkāpums fiksēts ar audio/video ieraksta iekārtu Axis Nr. {axis_nr}.",
@@ -100,7 +100,7 @@
   ]
 }
 ,
-  {
+   {
     "id": 5,
     "title": "Elektroskrējriteni divatā",
     "category": "CSN",
@@ -116,8 +116,72 @@
       },
       {
         "id": 3,
-        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma 51. panta devītajā daļā, 52. panta pirmajā, otrajā un ceturtajā daļā, 53. panta pirmajā, otrajā un vienpadsmitajā daļā, 54. panta sestajā daļā, 55. pantā (izņemot 27. daļā norādītos pārkāpumus, kurus izdarījis cita transportlīdzekļa vadītājs), 57., 58., 60., 68., 68.1., 70., 71., 74.–79., un 82. pantā minētajiem pārkāpumiem veic pašvaldības policija."
+        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma noteiktajiem pārkāpumiem veic pašvaldības policija."
       }
     ]
-  }
+  },
+  {
+    "id": 6,
+    "title": "Bezpilota gaisa kuģa (drona) lidojums bez apdrošināšanas",
+    "category": "Aviācija",
+    "description": "{datums} plkst. {laiks}, {vieta}. drona vadītājs pamanīts (kā vēlāk noskaidrots — {pilsonība} pilsonis {pilsonis}). Persona pilotēja bezpilota gaisa kuģi {drona_modelis}. Persona tika uzrunāta, un, kā tika noskaidrots, uz Latviju atbraukusi kā tūrists un bezpilota lidaparātu izmantojusi, lai iemūžinātu atpūtas laikā redzētos Rīgas skatus. Noskaidrots, ka persona veica lidojumu bezpilota gaisa kuģi, statiskā gaisa telpā {zona}, neievērojot Ministru kabineta noteikumu Nr.447 “Noteikumi par civiltiesiskās atbildības obligāto apdrošināšanu bezpilota gaisa kuģu lidojumiem” 2. punkta prasības, proti, lidojumu veicot Latvijas Republikas gaisa telpā bez apdrošināšanas, kas segtu iespējamos zaudējumus trešajām personām vai mantai. Persona veica likuma “Par aviāciju” 124.1⁴. pantā noteikto pārkāpumu. Pie atbildības saucamā persona, kā arī saziņas kanālu norādīja e-pasta adresi: {epasts}. Papildus persona norādīja dzīvesvietas adresi: {adrese}.",
+    "fields": [
+      "datums",
+      "laiks",
+      "vieta",
+      "zona",
+      "novērošanas_laiks",
+      "pilsonis",
+      "pilsonība",
+      "drona_modelis",
+      "epasts",
+      "adrese"
+    ],
+    "articles": [
+      {
+        "id": 1,
+        "text": "Administratīvās atbildības likums 153.1.1. Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+      },
+      {
+        "id": 2,
+        "text": "Administratīvās atbildības likums 116.2. Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+      },
+      {
+        "id": 3,
+        "text": "Administratīvās atbildības likums 123.1. Ja administratīvā pārkāpuma uzsākšanas brīdī pie atbildības saucamā persona ir zināma, tai piešķir šādu statusu ar lēmumu par administratīvā pārkāpuma procesa uzsākšanu."
+      },
+      {
+        "id": 4,
+        "text": "Likums “Par aviāciju” 124.1⁴. Par lidojuma veikšanu ar bezpilota gaisa kuģi bez civiltiesiskās atbildības obligātās apdrošināšanas piemēro brīdinājumu vai naudas sodu fiziskajai personai no trīsdesmit līdz simt četrdesmit naudas soda vienībām, bet juridiskajai personai — no simt līdz divsimt naudas soda vienībām."
+      },
+      {
+        "id": 5,
+        "text": "Likums “Par aviāciju” 125.3. Administratīvā pārkāpuma procesu par šā likuma 122. panta pirmās daļas un 124.1. panta pārkāpumiem veic Valsts policija vai pašvaldības policija."
+      }
+    ]
+  }, {
+  "id": 7,
+  "title": "Brīvības pieminekļa apgānīšana vai necieņas izrādīšana",
+  "category": "Sabiedriskā kārtība",
+  "description": "{datums}, plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}), deklarētā dzīvesvieta {dzivesvieta}, uzkāpa uz Brīvības pieminekļa postamenta, tādējādi izrādot klaju necieņu Latvijas valsts simbolam — Brīvības piemineklim. \n\nPārkāpums fiksēts ar videonovērošanas iekārtu Nr. {kamera_nr}. Dokumentu paziņošana uz deklarēto dzīvesvietu.",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 153.1.1. — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 116.2. — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 3,
+      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums 9. pants. — Par klaju necieņu pret Brīvības pieminekli vai Rīgas Brāļu kapiem piemēro naudas sodu fiziskajai personai no divsimt līdz četrsimt naudas soda vienībām."
+    },
+    {
+      "id": 4,
+      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums 11. pants. — Administratīvā pārkāpuma procesu par šā likuma 9. pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
+    }
+  ]
+}
+
 ]
