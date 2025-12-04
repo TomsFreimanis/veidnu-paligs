@@ -4,22 +4,24 @@
     "title": "Sabiedriskās kārtības traucēšana (atkailināšanās publiskā vietā)",
     "category": "Sabiedriskā kārtība",
     "description": "{datums}, plkst. {laiks}, {adrese}, {persona}, dzimis {dzimsanas_datums}, elektroniskā pasta adrese: {epasts}, ar savu uzvedību pārkāpa vispārpieņemtās uzvedības normas, traucēja sabiedrisko mieru un kārtību, novilka bikses un atkailināja dzimumorgānus. Tādejādi ar savu rīcību pārkāpis Administratīvo sodu likuma par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā 11. panta pirmās daļas minētās prasības.\n\nPārkāpums fiksēts ar kameru {kamera_vieta}. Izmantotas Axis kameras Nr. {kamera_nr}.",
+    "fine": 100,
+    "fine_text": "⚠️ Brīdinājums vai naudas sods līdz 100 vienībām",
     "articles": [
       {
         "id": 1,
-        "text": "Administratīvās atbildības likums, 153.1.1. Lēmumā par soda piemērošanu norāda: administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+        "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
       },
       {
         "id": 2,
-        "text": "Administratīvās atbildības likums, 116.2. Administratīvā pārkāpuma procesu uzsāk: uz amatpersonas iniciatīvas pamata."
+        "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
       },
       {
         "id": 3,
-        "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 11.1. Par sabiedriskās kārtības traucēšanu, pārkāpjot vispārpieņemtās uzvedības normas un traucējot personas mieru, iestādes, komersanta vai citas institūcijas darbu vai apdraudot savu vai citu personu drošību, piemēro brīdinājumu vai naudas sodu fiziskajai personai līdz simt naudas soda vienībām, bet juridiskajai personai — līdz tūkstoš naudas soda vienībām."
+        "text": "Administratīvo sodu likums 11.1 — Par sabiedriskās kārtības traucēšanu, pārkāpjot vispārpieņemtās uzvedības normas un traucējot personas mieru, iestādes, komersanta vai citas institūcijas darbu vai apdraudot savu vai citu personu drošību, piemēro brīdinājumu vai naudas sodu fiziskajai personai līdz 100 vienībām, bet juridiskajai personai — līdz 1000 vienībām."
       },
       {
         "id": 4,
-        "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 30.1. Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
+        "text": "Administratīvo sodu likums 30.1 — Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
       }
     ]
   },
@@ -27,27 +29,29 @@
     "id": 2,
     "title": "Iebrauca zem 301. ceļa zīmes",
     "category": "CSN",
-    "description": "{datums} plkst. {laiks}, {pilsonis} Republikas pilsonis (personas kods {personas_kods}) vadīja transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas Nr. {reg_nr}, pa {adrese} virzienā no {no} uz {uz}, neievērojot ceļa zīmes Nr. 301. (Iebraukt aizliegts) prasības.\n\nPārkāpumu pierāda: Axis Body Nr. {axis_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera}.",
+    "description": "{datums} plkst. {laiks}, {pilsonis} vadīja transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas Nr. {reg_nr}, pa {adrese} virzienā no {no} uz {uz}, neievērojot ceļa zīmes Nr. 301 (Iebraukt aizliegts) prasības.\n\nPārkāpumu pierāda: Axis Body Nr. {axis_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera}.",
+    "fine": 11,
+    "fine_text": "💶 11 vienības (~55 €)",
     "articles": [
       {
         "id": 1,
-        "text": "Administratīvās atbildības likums 153.1.1. Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+        "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
       },
       {
         "id": 2,
-        "text": "Administratīvās atbildības likums 116.2. Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+        "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
       },
       {
         "id": 3,
-        "text": "Ceļu satiksmes likums 75.2. Par tās prasības neizpildīšanu, kura noteikta ar 301., 319. vai 321. ceļa zīmi, piemēro naudas sodu velosipēda vai elektroskrejriteņa vadītājam divu naudas soda vienību apmērā, bet cita transportlīdzekļa vadītājam — vienpadsmit naudas soda vienību apmērā."
+        "text": "Ceļu satiksmes likums 75.2 — Par tās prasības neizpildīšanu, kura noteikta ar 301., 319. vai 321. ceļa zīmi, piemēro naudas sodu velosipēda vai elektroskrejriteņa vadītājam 2 vienības, bet cita transportlīdzekļa vadītājam — 11 vienības."
       },
       {
         "id": 4,
-        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma noteiktajiem pārkāpumiem veic pašvaldības policija."
+        "text": "Ceļu satiksmes likums 83.3 — Administratīvā pārkāpuma procesu par šā likuma noteiktajiem pārkāpumiem veic pašvaldības policija."
       },
       {
         "id": 5,
-        "text": "Ceļu satiksmes noteikumi 259.1. Aizlieguma zīmes nosaka vai atceļ noteiktus ceļu satiksmes ierobežojumus. 301. zīme — 'Iebraukt aizliegts'. Aizliegts iebraukt jebkādiem transportlīdzekļiem."
+        "text": "Ceļu satiksmes noteikumi 259.1 — Aizlieguma zīmes nosaka vai atceļ noteiktus ceļu satiksmes ierobežojumus. 301. zīme — 'Iebraukt aizliegts'. Aizliegts iebraukt jebkādiem transportlīdzekļiem."
       }
     ]
   },
@@ -56,147 +60,254 @@
     "title": "Nepakļaušanās amatpersonas rīkojumam",
     "category": "Sabiedriskā kārtība",
     "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}, deklarētā dzīvesvieta {dzīvesvieta}), nepildīja amatpersonas (pašvaldības policijas darbinieka) likumīgās prasības, proti — pēc urinēšanas neatļautā vietā, skrēja prom no notikuma vietas un nepildīja pašvaldības policijas darbinieku vairākkārtēju rīkojumu palikt uz vietas.\n\nNotikums fiksēts ar AXIS Nr. {axis_nr} un kameru {kamera}.",
+    "fine": 140,
+    "fine_text": "⚠️ Brīdinājums vai naudas sods līdz 140 vienībām",
     "articles": [
       {
         "id": 1,
-        "text": "Administratīvās atbildības likums 153.1.1. Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru."
+        "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru."
       },
       {
         "id": 2,
-        "text": "Administratīvās atbildības likums 116.2. Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+        "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
       },
       {
         "id": 3,
-        "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 4. pants — par amatpersonas likumīgo prasību nepildīšanu vai darbības traucēšanu piemēro brīdinājumu vai naudas sodu līdz 140 vienībām."
+        "text": "Administratīvo sodu likums 4. pants — Par amatpersonas likumīgo prasību nepildīšanu vai darbības traucēšanu piemēro brīdinājumu vai naudas sodu līdz 140 vienībām."
       },
       {
         "id": 4,
-        "text": "Administratīvo sodu likums, 29.6. pants — par šā likuma 4. pantā minēto pārkāpumu procesu veic pašvaldības policija."
+        "text": "Administratīvo sodu likums 29.6. pants — Par šā likuma 4. pantā minēto pārkāpumu procesu veic pašvaldības policija."
       }
     ]
   },
   {
-  "id": 4,
-  "title": "Alkoholisko dzērienu lietošana publiskā vietā",
-  "category": "Sabiedriskā kārtība",
-  "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}), deklarētā dzīvesvieta {dzivesvieta}, lietoja alkoholisku dzērienu \"{dzēriens}\" ({tilpums}%, {izmers}), publiskā vietā, kur tas nav atļauts. Dokumentu paziņošana uz deklarēto dzīvesvietu.\n\nPārkāpums fiksēts ar audio/video ieraksta iekārtu Axis Nr. {axis_nr}.",
-  "articles": [
-    {
-      "id": 1,
-      "text": "Administratīvās atbildības likums 153.1.1. — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
-    },
-    {
-      "id": 2,
-      "text": "Administratīvās atbildības likums 116.2. — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
-    },
-    {
-      "id": 3,
-      "text": "Administratīvo sodu likums par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā, 10. pants — Par alkoholisko dzērienu vai citu apreibinošo vielu lietošanu publiskā vietā, izņemot vietas, kur alkoholisko dzērienu mazumtirdzniecību patērēšanai uz vietas atļāvusi pašvaldība vai Valsts ieņēmumu dienests, vai par atrašanos publiskā vietā tādā reibuma stāvoklī, kas traucē sabiedrisko kārtību vai drošību, piemēro brīdinājumu vai naudas sodu līdz 70 naudas soda vienībām."
-    },
-    {
-      "id": 4,
-      "text": "Administratīvo sodu likums 30.1. — Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
-    }
-  ]
-}
-,
-   {
-    "id": 5,
-    "title": "Elektroskrējriteni divatā",
-    "category": "CSN",
-    "description": "{datums}, plkst. {laiks}, {adrese}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona apturēta, izskaidrots pārkāpums un par to paredzētā atbildība.",
+    "id": 4,
+    "title": "Alkoholisko dzērienu lietošana publiskā vietā",
+    "category": "Sabiedriskā kārtība",
+    "description": "{datums} plkst. {laiks}, {adrese}, persona {pilsonis} (personas kods {personas_kods}), deklarētā dzīvesvieta {dzivesvieta}, lietoja alkoholisku dzērienu \"{dzēriens}\" ({tilpums}%, {izmers}), publiskā vietā, kur tas nav atļauts.",
+    "fine": 70,
+    "fine_text": "⚠️ Brīdinājums vai naudas sods līdz 70 vienībām",
     "articles": [
       {
         "id": 1,
-        "text": "Ceļu satiksmes noteikumi 212.7.4. Elektroskrejriteņu vadītājiem aizliegts: vest pasažieri."
+        "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru."
       },
       {
         "id": 2,
-        "text": "Ceļu satiksmes likums 68. Par to noteikumu pārkāpšanu, kuri paredz papildu prasības velosipēdu vai elektroskrejriteņu vadītājiem, piemēro brīdinājumu vai naudas sodu velosipēda vai elektroskrejriteņa vadītājam no divām līdz četrpadsmit naudas soda vienībām."
+        "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
       },
       {
         "id": 3,
-        "text": "Ceļu satiksmes likums 83.3. Administratīvā pārkāpuma procesu par šā likuma noteiktajiem pārkāpumiem veic pašvaldības policija."
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "title": "Bezpilota gaisa kuģa (drona) lidojums bez apdrošināšanas",
-    "category": "Aviācija",
-    "description": "{datums} plkst. {laiks}, {vieta}. drona vadītājs pamanīts (kā vēlāk noskaidrots — {pilsonība} pilsonis {pilsonis}). Persona pilotēja bezpilota gaisa kuģi {drona_modelis}. Persona tika uzrunāta, un, kā tika noskaidrots, uz Latviju atbraukusi kā tūrists un bezpilota lidaparātu izmantojusi, lai iemūžinātu atpūtas laikā redzētos Rīgas skatus. Noskaidrots, ka persona veica lidojumu bezpilota gaisa kuģi, statiskā gaisa telpā {zona}, neievērojot Ministru kabineta noteikumu Nr.447 “Noteikumi par civiltiesiskās atbildības obligāto apdrošināšanu bezpilota gaisa kuģu lidojumiem” 2. punkta prasības, proti, lidojumu veicot Latvijas Republikas gaisa telpā bez apdrošināšanas, kas segtu iespējamos zaudējumus trešajām personām vai mantai. Persona veica likuma “Par aviāciju” 124.1⁴. pantā noteikto pārkāpumu. Pie atbildības saucamā persona, kā arī saziņas kanālu norādīja e-pasta adresi: {epasts}. Papildus persona norādīja dzīvesvietas adresi: {adrese}.",
-    "fields": [
-      "datums",
-      "laiks",
-      "vieta",
-      "zona",
-      "novērošanas_laiks",
-      "pilsonis",
-      "pilsonība",
-      "drona_modelis",
-      "epasts",
-      "adrese"
-    ],
-    "articles": [
-      {
-        "id": 1,
-        "text": "Administratīvās atbildības likums 153.1.1. Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
-      },
-      {
-        "id": 2,
-        "text": "Administratīvās atbildības likums 116.2. Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
-      },
-      {
-        "id": 3,
-        "text": "Administratīvās atbildības likums 123.1. Ja administratīvā pārkāpuma uzsākšanas brīdī pie atbildības saucamā persona ir zināma, tai piešķir šādu statusu ar lēmumu par administratīvā pārkāpuma procesa uzsākšanu."
+        "text": "Administratīvo sodu likums 10. pants — Par alkoholisko dzērienu vai citu apreibinošo vielu lietošanu publiskā vietā piemēro brīdinājumu vai naudas sodu līdz 70 vienībām."
       },
       {
         "id": 4,
-        "text": "Likums “Par aviāciju” 124.1⁴. Par lidojuma veikšanu ar bezpilota gaisa kuģi bez civiltiesiskās atbildības obligātās apdrošināšanas piemēro brīdinājumu vai naudas sodu fiziskajai personai no trīsdesmit līdz simt četrdesmit naudas soda vienībām, bet juridiskajai personai — no simt līdz divsimt naudas soda vienībām."
-      },
-      {
-        "id": 5,
-        "text": "Likums “Par aviāciju” 125.3. Administratīvā pārkāpuma procesu par šā likuma 122. panta pirmās daļas un 124.1. panta pārkāpumiem veic Valsts policija vai pašvaldības policija."
+        "text": "Administratīvo sodu likums 30.1 — Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
       }
     ]
-  }, {
-  "id": 7,
+  },
+
+
+  {
+  "id": 8,
   "title": "Klaja necieņas izrādīšana pret Brīvības pieminekli",
   "category": "Sabiedriskā kārtība",
-  "description": "{datums} plkst. {laiks}, {adrese}, {pilsonis} (dzimšanas datums {dzimsanas_datums}), deklarētā dzīvesvieta {dzivesvieta}, e-pasta adrese {epasts}, telefona numurs {telefons}, no skatu laukuma puses pie metāla ieejas durvīm uzrāpās uz Brīvības pieminekļa masīva pamatnes, tādā veidā izrādot klaju necieņu pret Brīvības pieminekli. Ar savu rīcību persona pārkāpa \"Brīvības pieminekļa un Rīgas Brāļu kapu likuma\" 9. pantā minētās prasības. \n\nPārkāpumu pierāda: video fiksācija ar video iekārtu {kamera_tips} Nr. {kamera_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera_vieta}. {prat_protokol_nr}.",
+  "description": "{datums} plkst. {laiks}, {adrese}, {pilsonis} (dzimšanas datums {dzimsanas_datums}), deklarētā dzīvesvieta {dzivesvieta}, e-pasta adrese {epasts}, telefona numurs {telefons}, no skatu laukuma puses pie metāla ieejas durvīm uzrāpās uz Brīvības pieminekļa masīva pamatnes, tādā veidā izrādot klaju necieņu pret Brīvības pieminekli. Ar savu rīcību persona pārkāpa \"Brīvības pieminekļa un Rīgas Brāļu kapu likuma\" 9. pantā minētās prasības.\n\nPārkāpumu pierāda: video fiksācija ar video iekārtu {kamera_tips} Nr. {kamera_nr}, Rīgas pašvaldības policijas Video novērošanas centra kamera {kamera_vieta}. {prat_protokol_nr}.",
+  "fine": 400,
+  "fine_text": "💶 Naudas sods no 200 līdz 400 vienībām",
   "articles": [
     {
       "id": 1,
-      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums – 9. pants. Par klajas necieņas izrādīšanu pret Brīvības pieminekli vai Rīgas Brāļu kapiem piemēro naudas sodu fiziskajai personai no divsimt līdz četrsimt naudas soda vienībām (no 1000 līdz 2000 euro)."
+      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums 9. pants — Par klajas necieņas izrādīšanu pret Brīvības pieminekli vai Rīgas Brāļu kapiem piemēro naudas sodu fiziskajai personai no 200 līdz 400 naudas soda vienībām."
     },
     {
       "id": 2,
-      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums – 11. pants. Administratīvā pārkāpuma procesu par šā likuma 9. un 10. pantā minētajiem pārkāpumiem veic Valsts policija un pašvaldības policija."
+      "text": "Brīvības pieminekļa un Rīgas Brāļu kapu likums 11. pants — Administratīvā pārkāpuma procesu par šā likuma 9. un 10. pantā minētajiem pārkāpumiem veic Valsts policija un pašvaldības policija."
     },
     {
       "id": 3,
-      "text": "Administratīvās atbildības likums 153.1.1. — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
     },
     {
       "id": 4,
-      "text": "Administratīvās atbildības likums 116.2. — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
     }
-  ],
-  "fields": [
-    "datums",
-    "laiks",
-    "adrese",
-    "pilsonis",
-    "dzimsanas_datums",
-    "dzivesvieta",
-    "epasts",
-    "telefons",
-    "kamera_tips",
-    "kamera_nr",
-    "kamera_vieta",
-    "prat_protokol_nr"
+  ]
+},
+{
+  "id": 9,
+  "title": "Bezpilota gaisa kuģim nav marķējuma",
+  "category": "Aviācija",
+  "description": "{datums} plkst. {laiks}, {adrese}, Rīgā, tika konstatēts, ka valsts pilsonis {pilsonis}, personas kods/dzimšanas dati {dzimsanas_datums}, deklarētā dzīvesvieta {dzivesvieta}, e-pasta adrese {epasts}, telefona numurs {telefons}, pilotēja bezpilota gaisa kuģi “DJI Mini 2 Pro” (ID {drona_id}), kas nebija marķēts atbilstoši Eiropas Komisijas Īstenošanas regulas (ES 2019/947) 14. panta 8. punktam.\n\nPārkāpumu pierāda: 1) RVPP Videonovērošanas centra kameras; 2) RVPP individuālā video kamera \"AXIS\" Nr. {axis_nr}; 3) foto fiksācija; 4) Aeroscope sistēmas dati ({aeroscope_info}).",
+  "fine": 30,
+  "fine_text": "💶 Brīdinājums vai naudas sods no 10 līdz 30 vienībām",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 3,
+      "text": "Likums \"Par aviāciju\" 124.1.1 — Par lidojuma veikšanu ar bezpilota gaisa kuģi, kas nav marķēts vai identificējams, piemēro brīdinājumu vai naudas sodu fiziskajai personai no 10 līdz 30 naudas soda vienībām, bet juridiskajai personai — no 30 līdz 100 vienībām."
+    },
+    {
+      "id": 4,
+      "text": "Likums \"Par aviāciju\" 125.3 — Administratīvā pārkāpuma procesu par attiecīgajiem 122. panta un 124.1 panta pārkāpumiem veic Valsts policija un pašvaldības policija. RVPP ir pilna kompetence pieņemt lēmumu."
+    }
+  ]
+},
+{
+  "id": 10,
+  "title": "Lidojums virs 50 metriem bez atļaujas",
+  "category": "Aviācija",
+  "description": "{datums} plkst. {laiks}, {adrese}, Rīgā, tika konstatēts, ka valsts pilsonis {pilsonis}, personas kods/dzimšanas datums {dzimsanas_datums}, deklarētā dzīvesvieta: {dzivesvieta}, e-pasta adrese {epasts}, telefona numurs {telefons}, pilotēja bezpilota gaisa kuģi “DJI Mini 2 Pro” (ID {drona_id}) gaisa telpas struktūras elementā “UAS RIGA CTR SEGMENT 2” virs 50 metriem bez atļaujas vai saskaņojuma likumā noteiktajā kārtībā, pārkāpjot likuma \"Par aviāciju\" 124.1. panta četrpadsmitās daļas prasības.\n\nPārkāpumu pierāda: 1) RVPP Videonovērošanas centra kameras; 2) RVPP individuālā video kamera \"AXIS\" Nr. {axis_nr}; 3) foto fiksācija; 4) Aeroscope sistēmas dati ({aeroscope_info}).",
+  "fine": 200,
+  "fine_text": "💶 Brīdinājums vai naudas sods no 30 līdz 200 vienībām. - Daļēja kompetence, RPP uzsāk procesu un lieta tiek nodota Civilās aviācijas aģentūrai.",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 3,
+      "text": "Likums \"Par aviāciju\" 124.1.14 — Par lidojuma veikšanu ar bezpilota gaisa kuģi gaisa telpas struktūras elementā bez atļaujas vai saskaņojuma vai sertificētu lidlauku tuvumā, neievērojot lidojuma attālumu no lidlauka vai pieļaujamo lidojuma augstumu, piemēro brīdinājumu vai naudas sodu fiziskajai personai no 30 līdz 200 naudas soda vienībām, bet juridiskajai personai — no 100 līdz 500 vienībām."
+    },
+    {
+      "id": 4,
+      "text": "Likums \"Par aviāciju\" 125.6 — Administratīvā pārkāpuma procesu par 124.1 panta 12., 13. un 14. daļā minētajiem pārkāpumiem līdz lietas izskatīšanai veic Valsts policija, pašvaldības policija vai Civilās aviācijas aģentūra. Administratīvā pārkāpuma lietu izskata Civilās aviācijas aģentūra. RPP kompetence — uzsākt procesu un nodot lietu CAA."
+    }
+  ]
+},
+{
+  "id": 11,
+  "title": "Lidojums bez apdrošināšanas (tūristam)",
+  "category": "Aviācija",
+  "description": "{datums} plkst. {laiks}, {vieta}. Drona vadītājs tika pamanīts (kā vēlāk noskaidrots — {pilsonība} pilsonis {pilsonis}). Persona pilotēja bezpilota gaisa kuģi {drona_modelis}. Persona tika uzrunāta, un tika noskaidrots, ka tā uz Latviju atbraukusi kā tūrists un bezpilota lidaparātu izmantojusi, lai iemūžinātu atpūtas laikā redzētos Rīgas skatus. Konstatēts, ka persona veica lidojumu statiskā gaisa telpā {zona}, neievērojot Ministru kabineta noteikumu Nr. 447 “Noteikumi par civiltiesiskās atbildības obligāto apdrošināšanu bezpilota gaisa kuģu lidojumiem” 2. punkta prasības, proti — veica lidojumu Latvijas Republikas gaisa telpā bez apdrošināšanas, kas segtu iespējamos zaudējumus trešajām personām vai mantai. Persona veica likuma “Par aviāciju” 124.1⁴ pantā noteikto pārkāpumu.\n\nPie atbildības saucamā persona kā saziņas kanālu norādīja e-pasta adresi: {epasts}. Papildus persona norādīja dzīvesvietas adresi: {adrese}.",
+  "fine": 140,
+  "fine_text": "💶 Brīdinājums vai naudas sods līdz 140 vienībām",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 3,
+      "text": "Administratīvās atbildības likums 123.1 — Ja administratīvā pārkāpuma uzsākšanas brīdī pie atbildības saucamā persona ir zināma, tai piešķir šo statusu ar lēmumu par administratīvā pārkāpuma procesa uzsākšanu."
+    },
+    {
+      "id": 4,
+      "text": "Likums “Par aviāciju” 124.1⁴ — Par lidojuma veikšanu ar bezpilota gaisa kuģi bez civiltiesiskās atbildības obligātās apdrošināšanas piemēro brīdinājumu vai naudas sodu fiziskajai personai no 30 līdz 140 naudas soda vienībām, bet juridiskajai personai — no 100 līdz 200 vienībām."
+    },
+    {
+      "id": 5,
+      "text": "Likums “Par aviāciju” 125.3 — Administratīvā pārkāpuma procesu par šā likuma 122. panta pirmās daļas un 124.1. panta pārkāpumiem veic Valsts policija vai pašvaldības policija."
+    }
+  ]
+},
+{
+  "id": 12,
+  "title": "Lidojums bez saskaņojuma (UAS NSB 62)",
+  "category": "Aviācija",
+  "description": "{datums} plkst. {laiks}, {adrese}, Rīgā, tika konstatēts, ka valsts pilsonis {pilsonis}, personas kods/dzimšanas datums {dzimsanas_datums}, deklarētā dzīvesvieta: {dzivesvieta}, e-pasta adrese: {epasts}, telefona numurs: {telefons}, pilotēja bezpilota gaisa kuģi “DJI Mini 2 Pro” (ID {drona_id}) statiskā gaisa telpā UAS NSB 62, tuvāk par normatīvajos aktos bezpilota gaisa kuģu jomā noteikto attālumu no militāra objekta (Ministru kabineta 23.04.2024. noteikumi Nr. 248 “Bezpilota gaisa kuģu lidojumu noteikumi” 28. punkts), kas tiek izmantots Nacionālo bruņoto spēku vajadzībām, bez iepriekšēja saskaņojuma ar Nacionālajiem bruņotajiem spēkiem.\n\nPārkāpumu pierāda: 1) RVPP Videonovērošanas centra kameras; 2) RVPP individuālā video kamera \"AXIS\" Nr. {axis_nr}; 3) foto fiksācija; 4) Aeroscope sistēmas dati — VVC izdruka ({aeroscope_info}).",
+  "fine": 140,
+  "fine_text": "💶 Brīdinājums vai naudas sods no 10 līdz 140 vienībām - Daļēja kompetence, RVPP uzsāk procesu un lieta tiek nodota Militārai policijai",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 3,
+      "text": "Likums “Par aviāciju” 124.1.9 — Par lidojuma veikšanu ar bezpilota gaisa kuģi tuvāk par normatīvajos aktos noteikto attālumu no militārajiem objektiem, kuri tiek izmantoti Nacionālo bruņoto spēku vajadzībām, bez saskaņojuma ar Nacionālajiem bruņotajiem spēkiem piemēro brīdinājumu vai naudas sodu fiziskajai personai no 10 līdz 140 naudas soda vienībām, bet juridiskajai personai — no 30 līdz 400 vienībām."
+    },
+    {
+      "id": 4,
+      "text": "Likums “Par aviāciju” 125.9 — Administratīvā pārkāpuma procesu par 124.1 panta 9. daļā minētajiem pārkāpumiem līdz lietas izskatīšanai veic Valsts policija vai pašvaldības policija. Administratīvā pārkāpuma lietu izskata Militārā policija. RVPP kompetence — uzsākt procesu un nodot lietu Militārajai policijai."
+    }
+  ]
+},
+{
+  "id": 13,
+  "title": "Neievēro ceļa zīmi Nr. 417 (kopīgs gājēju un velosipēdu ceļš)",
+  "category": "CSN",
+  "description": "{datums} plkst. {laiks}, {adrese}, Rīgā, tika konstatēts, ka {pilsonība} pilsonis {pilsonis} (personas kods/dzimšanas dati {dzimsanas_datums}, telefona numurs {telefons}) vadīja transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas Nr. {reg_nr}, braucot pa gājēju un velosipēdu kopējo ceļu pa {iela} virzienā no {no} uz {uz}, neievērojot ceļa zīmes Nr. 417 (kopīgs gājēju un velosipēdistu ceļš) prasības.\n\nNaudas sods nomaksāts uz vietas, izmantojot naudas terminālu. Sastādīts profilaktisko pārrunu protokols.\n\nPārkāpumu pierāda: Axis Body Nr. {axis_nr}, Rīgas valstspilsētas pašvaldības policijas Video novērošanas centra kameras {kamera_1}, {kamera_2}. Kā saziņas līdzekli persona norādīja e-pasta adresi: {epasts}.",
+  "fine": 11,
+  "fine_text": "💶 Naudas sods 11 vienības",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 3,
+      "text": "Ceļu satiksmes likums 76.2 — Par tās prasības neizpildīšanu, kura noteikta ar 413., 414., 415., 416. vai 417. ceļa zīmi, piemēro naudas sodu velosipēda vai elektroskrejriteņa vadītājam 2 vienības, bet cita transportlīdzekļa vadītājam — 11 vienības."
+    },
+    {
+      "id": 4,
+      "text": "Ceļu satiksmes likums 83.3 — Administratīvā pārkāpuma procesu par šā likuma 74., 75., 76., 77., 78. pantā, kā arī citos norādītajos pantos minētajiem pārkāpumiem veic pašvaldības policija."
+    },
+    {
+      "id": 5,
+      "text": "Ceļu satiksmes noteikumi 98. punkts — Mehāniskajiem transportlīdzekļiem aizliegts braukt pa gājēju ceļiem, velosipēdu ceļiem, kopīgiem gājēju un velosipēdu ceļiem, izņemot noteiktos izņēmumus."
+    }
+  ]
+},
+{
+  "id": 14,
+  "title": "Ar Elektroskrejriteni veda pasažieri",
+  "category": "CSN",
+  "description": "{datums}, plkst. {laiks}, {adrese}, pamanīta persona, kā vēlāk noskaidrots — {pilsonis} (personas kods {personas_kods}), elektroniskā pasta adrese {epasts}, kura, vadot elektroskrejriteni {modelis} ar reģistrācijas numuru {reg_nr}, pa {maršruts} veda pasažieri {pasažieris}. Persona tika apturēta, izskaidrots pārkāpums un atbildība par tā izdarīšanu.",
+  "fine": 14,
+  "fine_text": "⚠️ Brīdinājums vai naudas sods no 2 līdz 14 vienībām",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Ceļu satiksmes noteikumi 212.7.4 — Elektroskrejriteņu vadītājiem aizliegts vest pasažieri."
+    },
+    {
+      "id": 2,
+      "text": "Ceļu satiksmes likums 68 — Par papildu prasību pārkāpumiem velosipēdu vai elektroskrejriteņu vadītājiem piemēro brīdinājumu vai naudas sodu no 2 līdz 14 vienībām."
+    },
+    {
+      "id": 3,
+      "text": "Ceļu satiksmes likums 83.3 — Administratīvā pārkāpuma procesu par šā likuma noteiktajiem pārkāpumiem veic pašvaldības policija."
+    },
+    {
+      "id": 4,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 5,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    }
   ]
 }
 
 
+
+
+
+
+  
 ]

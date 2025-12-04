@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "type": "ceļu satiksme",
+    "purpose": "Elektroskrejritenis ar pasažieri",
+    "example_input": "Persona vadīja elektroskrejriteni ar pasažieri Brīvības laukumā.",
+    "example_output": "2025. gada 10. jūnijā plkst. {laiks}, Rīgā, Brīvības laukumā 1, {pilsonis}, dzimis {dzimsanas_datums}, e-pasta adrese {epasts}, deklarētā dzīvesvieta {dzivesvieta}, vadot elektroskrejriteni BOLT, veda pasažieri. Persona apturēta, izskaidrots pārkāpuma būtība un par to paredzētā atbildība. Persona neievēroja MK noteikumu Nr. 279 “Ceļu satiksmes noteikumi” 212.7.4. apakšpunkta prasības, par ko atbildība paredzēta Ceļu satiksmes likuma 68. pantā.\n\nPārkāpumu pierāda: Axis Body kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 2,
+    "type": "ceļu satiksme",
+    "purpose": "Braukšana zem ceļa zīmes",
+    "example_input": "Persona brauca zem zīmes 417 Rātslaukumā.",
+    "example_output": "2025. gada 14. maijā plkst. {laiks}, Rātslaukumā 1, Rīgā, {pilsonis}, vadot transportlīdzekli {transportlidzeklis} ar valsts reģistrācijas numuru {reg_nr}, brauca no Kungu ielas virzienā uz Kaļķu ielu, neievērojot MK noteikumu Nr. 279 “Ceļu satiksmes noteikumi” 271.17. apakšpunkta Rīkojuma zīmes 417 prasības. Ar savu rīcību persona pārkāpa Ceļu satiksmes likuma 76. panta otrās daļas prasības.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 3,
+    "type": "sabiedriskā kārtība",
+    "purpose": "Nekārtīga rīcība pie Brīvības pieminekļa",
+    "example_input": "Persona uzkāpa uz Brīvības pieminekļa pamatnes.",
+    "example_output": "2025. gada 24. oktobrī plkst. {laiks}, Brīvības laukumā 1, Rīgā, {pilsonis}, dzimis {dzimsanas_datums}, deklarētā dzīvesvieta {dzivesvieta}, uzkāpa uz Brīvības pieminekļa pamatnes, tādējādi izrādot klaju necieņu pret valsts simbolu. Ar šo rīcību pārkāpts “Brīvības pieminekļa un Rīgas Brāļu kapu likuma” 9. pants.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 4,
+    "type": "sabiedriskā kārtība",
+    "purpose": "Alkohola lietošana publiskā vietā",
+    "example_input": "Persona lietoja alu Brīvības laukumā.",
+    "example_output": "2025. gada 15. maijā plkst. {laiks}, Brīvības laukumā 1, Rīgā, {pilsonis}, dzimis {dzimsanas_datums}, lietoja alkoholisku dzērienu — alu {dzēriens} ({tilpums}), publiskā vietā, kur pašvaldība alkoholisko dzērienu lietošanu nav atļāvusi. Ar savu rīcību persona pārkāpa Administratīvo sodu likuma 10. pantu.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 5,
+    "type": "sabiedriskā kārtība",
+    "purpose": "Sīkais huligānisms (atkailināšanās publiskā vietā)",
+    "example_input": "Persona publiskā vietā novilka bikses un atkailinājās.",
+    "example_output": "2025. gada 18. jūnijā plkst. {laiks}, Kaļķu ielā 5, Rīgā, {pilsonis}, dzimis {dzimsanas_datums}, publiskā vietā novilka bikses un atkailināja dzimumorgānus, tādējādi traucējot sabiedrisko mieru un kārtību. Ar savu rīcību persona pārkāpa Administratīvo sodu likuma 11. panta pirmās daļas prasības.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 6,
+    "type": "aviācija",
+    "purpose": "Drona lidojums bez apdrošināšanas",
+    "example_input": "Persona vadīja dronu bez apdrošināšanas.",
+    "example_output": "2025. gada 16. novembrī plkst. {laiks}, Esplanādes parkā, Rīgā, {pilsonis}, {pilsonība} pilsonis, pilotēja bezpilota gaisa kuģi {drona_modelis} Latvijas gaisa telpā, neievērojot Ministru kabineta noteikumu Nr. 447 “Noteikumi par civiltiesiskās atbildības obligāto apdrošināšanu bezpilota gaisa kuģu lidojumiem” 2. punkta prasības. Persona ar savu rīcību pārkāpa likuma “Par aviāciju” 124.1⁴. pantu.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+   {
+    "id": 7,
+    "type": "sabiedriskā kārtība",
+    "purpose": "Alkohola lietošana publiskā vietā",
+    "example_input": "Persona lietoja alkoholu, Miera iela 22.",
+    "example_output": "2025. gada 15. maijā plkst. {laiks}, Brīvības laukumā 1, Rīgā, {pilsonis}, dzimis {dzimsanas_datums}, lietoja alkoholisku dzērienu — alu {dzēriens} ({tilpums}), publiskā vietā, kur pašvaldība alkoholisko dzērienu lietošanu nav atļāvusi. Ar savu rīcību persona pārkāpa Administratīvo sodu likuma 10. pantu.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 8,
+    "type": "sabiedriskā kārtība",
+    "purpose": "Alkohola lietošana publiskā vietā",
+    "example_input": "Persona lietoja alkoholu, Miera iela 22.",
+    "example_output": "2025. gada 15. maijā plkst. {laiks}, Miera iela, Rīgā, {pilsonis}, dzimis {dzimsanas_datums}, lietoja alkoholisku dzērienu — alu {dzēriens} ({tilpums}), publiskā vietā, kur pašvaldība alkoholisko dzērienu lietošanu nav atļāvusi. Ar savu rīcību persona pārkāpa Administratīvo sodu likuma 10. pantu.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+    {
+    "id": 9,
+    "type": "ceļu satiksme",
+    "purpose": "Elektroskrejritenis ar pasažieri",
+    "example_input": "Persona vadīja elektroskrejriteni ar pasažieri Miera iela 22.",
+    "example_output": "2025. gada 10. jūnijā plkst. {laiks}, Rīgā, Brīvības laukumā 1, {pilsonis}, dzimis {dzimsanas_datums}, e-pasta adrese {epasts}, deklarētā dzīvesvieta {dzivesvieta}, vadot elektroskrejriteni BOLT, veda pasažieri. Persona apturēta, izskaidrots pārkāpuma būtība un par to paredzētā atbildība. Persona neievēroja MK noteikumu Nr. 279 “Ceļu satiksmes noteikumi” 212.7.4. apakšpunkta prasības, par ko atbildība paredzēta Ceļu satiksmes likuma 68. pantā.\n\nPārkāpumu pierāda: Axis Body kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  },
+    {
+    "id": 10,
+    "type": "aviācija",
+    "purpose": "Drona lidojums nav marķēts vai identificējams",
+    "example_input": "Persona vadīja nav marķēts vai identificējams.",
+    "example_output": "2025. gada 16. novembrī plkst. {laiks}, Esplanādes parkā, Rīgā, {pilsonis}, {pilsonība} pilsonis, pilotēja bezpilota gaisa kuģi {drona_modelis} Latvijas gaisa telpā, neievērojot Par lidojuma veikšanu ar bezpilota gaisa kuģi, kas nav marķēts vai identificējams,. Persona ar savu rīcību pārkāpa likuma “Par aviāciju” 124.1(4). pantu.\n\nPārkāpumu pierāda: Axis kamera {axis_nr} un Rīgas pašvaldības policijas kamera {kamera}."
+  }, 
+  [
+  {
+    "id": 30,
+    "title": "Smēķēšana sabiedriskā transporta pieturvietā",
+    "category": "Smēķēšanas aizliegumi",
+    "example_input": "Persona smēķēja sabiedriskā transporta pieturā pie Kaļķu ielas.",
+    "example_output": "{datums} plkst. {laiks}, {adrese}, {persona} sabiedriskā transporta pieturvietā smēķēja tabakas izstrādājumu. Šāda rīcība pārkāpj Tabakas izstrādājumu, tabakas aizstājējproduktu, augu smēķēšanas produktu, elektronisko smēķēšanas ierīču un to šķidrumu aprites likuma 10. panta otrās daļas 5. punktu, kas aizliedz smēķēt sabiedriskā transporta pieturvietās.\n\nPārkāpumu pierāda: Axis Body {axis_nr}, Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 31,
+    "title": "Smēķēšana bērnu rotaļu laukumā",
+    "category": "Smēķēšanas aizliegumi",
+    "example_input": "Persona smēķēja bērnu rotaļu laukumā pie Esplanādes.",
+    "example_output": "{datums} plkst. {laiks}, {adrese}, {persona} bērnu rotaļu laukumā smēķēja tabakas izstrādājumu, tādējādi pārkāpjot Tabakas aprites likuma 10. panta otrās daļas 13. punktu, kas aizliedz smēķēt bērnu rotaļu laukumos un to teritorijās.\n\nPārkāpumu pierāda: Axis Body {axis_nr}, Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 32,
+    "title": "Smēķēšana daudzdzīvokļu mājas koplietošanas telpā",
+    "category": "Smēķēšanas aizliegumi",
+    "example_input": "Persona smēķēja daudzdzīvokļu mājas kāpņutelpā.",
+    "example_output": "{datums} plkst. {laiks}, {adrese}, {persona} smēķēja daudzdzīvokļu dzīvojamās mājas koplietošanas telpā (kāpņutelpā), pārkāpjot Tabakas aprites likuma 10. panta otrās daļas 6. punktu, kas aizliedz smēķēšanu koplietošanas telpās.\n\nPārkāpumu pierāda: Axis Body {axis_nr}, Rīgas pašvaldības policijas kamera {kamera}."
+  },
+  {
+    "id": 33,
+    "title": "Smēķēšana pie ēkas ieejas tuvāk par 10 metriem",
+    "category": "Smēķēšanas aizliegumi",
+    "example_input": "Persona smēķēja pie publiskas ēkas durvīm, tuvāk par 10 metriem.",
+    "example_output": "{datums} plkst. {laiks}, {adrese}, {persona} smēķēja tuvāk par 10 metriem no publiskās ēkas ieejas, pārkāpjot Tabakas aprites likuma 10. panta otrās daļas 4. punktu, kas aizliedz smēķēšanu tuvāk par 10 metriem no ieejām.\n\nPārkāpumu pierāda: Axis Body {axis_nr}, Rīgas pašvaldības policijas kamera {kamera}."
+  }, 
+  {
+  "id": 34,
+  "title": "Smēķēšana parkā, skvērā vai peldvietā",
+  "category": "Smēķēšanas aizliegumi",
+  "example_input": "Persona smēķēja Kronvalda parkā pie soliņa.",
+  "example_output": "{datums} plkst. {laiks}, {adrese}, {persona} smēķēja publiskā parkā (Kronvalda parks), kur nav speciāli ierādītas vietas smēķēšanai. Ar šo rīcību persona pārkāpa Tabakas izstrādājumu, tabakas aizstājējproduktu, augu smēķēšanas produktu, elektronisko smēķēšanas ierīču un to šķidrumu aprites likuma 10. panta otrās daļas 14. punktu, kas aizliedz smēķēt parkos, skvēros un peldvietās, izņemot speciāli ierādītās vietās.\n\nPārkāpumu pierāda: Axis Body {axis_nr}, Rīgas pašvaldības policijas kamera {kamera}."
+}
+
+]
+
+]
