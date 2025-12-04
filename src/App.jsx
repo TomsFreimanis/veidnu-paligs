@@ -19,21 +19,27 @@ export default function App() {
 
           <div className="flex gap-2">
             <button
-              className={`px-4 py-2 rounded-full text-sm font-medium ${
-                activeView === "cases" ? "bg-blue-600 text-white" : "border"
-              }`}
-              onClick={() => setActiveView("cases")}
-            >
-              Notikumi
-            </button>
-            <button
-              className={`px-4 py-2 rounded-full text-sm font-medium ${
-                activeView === "resources" ? "bg-blue-600 text-white" : "border"
-              }`}
-              onClick={() => setActiveView("resources")}
-            >
-              Resursi
-            </button>
+  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors
+    ${activeView === "cases" 
+      ? "bg-blue-600 text-white dark:bg-blue-500 dark:text-white" 
+      : "border border-gray-400 text-gray-800 dark:border-gray-600 dark:text-white"
+    }`}
+  onClick={() => setActiveView("cases")}
+>
+  Notikumi
+</button>
+
+<button
+  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors
+    ${activeView === "resources" 
+      ? "bg-blue-600 text-white dark:bg-blue-500 dark:text-white" 
+      : "border border-gray-400 text-gray-800 dark:border-gray-600 dark:text-white"
+    }`}
+  onClick={() => setActiveView("resources")}
+>
+  Resursi
+</button>
+
           </div>
         </div>
       </header>
