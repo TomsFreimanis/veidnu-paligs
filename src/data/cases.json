@@ -302,7 +302,34 @@
       "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
     }
   ]
+},
+{
+  "id": 15,
+  "title": "Sabiedriskās kārtības traucēšana (kautiņš publiskā vietā)",
+  "category": "Sabiedriskā kārtība",
+  "description": "{datums} plkst. {laiks}, no Rīgas valstspilsētas pašvaldības policijas Operatīvās vadības un drošības uzraudzības pārvaldes Video novērošanas centra (turpmāk — Video) darbiniekiem saņemta informācija par to, ka {iela}, {pilsēta}, starp vairākām personām notiek kautiņš.\n\n{datums} plkst. {laiks_ierasanos}, ierodoties notikuma vietā {adrese}, konstatēts, ka notikumā ir iesaistītas vairākas personas. Noskaidrots, ka persona {pilsonis} (personas kods {personas_kods}, dzimšanas datums {dzimsanas_datums}, deklarētā dzīvesvieta {dzivesvieta}, e-pasta adrese {epasts}, telefona numurs {telefons}) iesaistījās kautiņā, veicot vairākus sitienus ar roku un kāju citai personai.\n\nSazinoties ar Video novērošanas centra darbiniekiem, kā arī noskatoties pieejamo video materiālu, noskaidrots, ka {pilsonis} ar savām darbībām pārkāpa vispārpieņemtās uzvedības normas un traucēja sabiedrisko kārtību, personu mieru, kā arī iestāžu, komersantu vai citu institūciju darbu.\n\nŅemot vērā iepriekš minēto, {pilsonis} ar savu rīcību izdarīja Administratīvo sodu likuma par pārkāpumiem pārvaldes, sabiedriskās kārtības un valsts valodas lietošanas jomā 11. panta pirmajā daļā noteikto administratīvo pārkāpumu.\n\nAtbildību pastiprinoši vai mīkstinoši apstākļi nav konstatēti. Paziņojums par pieņemto lēmumu par administratīvā pārkāpuma procesa uzsākšanu un soda piemērošanu nosūtāms uz personas e-adresi.\n\nPārkāpumu pierāda: AXIS Body Nr. {axis_nr} videoieraksts; Rīgas valstspilsētas pašvaldības policijas Video novērošanas centra kameras {kamera_1} un {kamera_2} videoieraksti.",
+  "fine": 100,
+  "fine_text": "⚠️ Brīdinājums vai naudas sods līdz 100 vienībām",
+  "articles": [
+    {
+      "id": 1,
+      "text": "Administratīvās atbildības likums 116.2 — Administratīvā pārkāpuma procesu uzsāk uz amatpersonas iniciatīvas pamata."
+    },
+    {
+      "id": 2,
+      "text": "Administratīvās atbildības likums 153.1.1 — Lēmumā par soda piemērošanu norāda administratīvā pārkāpuma lietas numuru, kā arī ietver optiski mašīnlasāmu attēlu, kurā iekodēts administratīvā pārkāpuma lietas numurs."
+    },
+    {
+      "id": 3,
+      "text": "Administratīvo sodu likums 11.1 — Par sabiedriskās kārtības traucēšanu, pārkāpjot vispārpieņemtās uzvedības normas un traucējot personas mieru, iestādes, komersanta vai citas institūcijas darbu vai apdraudot savu vai citu personu drošību, piemēro brīdinājumu vai naudas sodu fiziskajai personai līdz 100 naudas soda vienībām, bet juridiskajai personai — līdz 1000 vienībām."
+    },
+    {
+      "id": 4,
+      "text": "Administratīvo sodu likums 30.1 — Administratīvā pārkāpuma procesu par šā likuma 9., 10., 11., 12., 13. un 13.1 pantā minētajiem pārkāpumiem veic Valsts policija vai pašvaldības policija."
+    }
+  ]
 }
+
 
 
 
